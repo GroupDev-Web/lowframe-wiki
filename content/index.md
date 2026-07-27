@@ -1,7 +1,5 @@
 ---
 title: Home
-tags:
-  - Home
 draft: false
 ---
 # **Welcome to LowFrame Wiki**
