@@ -4,11 +4,12 @@ draft: false
 ---
 # EssentialsX
 
-EssentialsX is a plugin for paper, bukkit, and spigot servers that contains all of the essential commands for a server such as /tpa, /sethome, and more.  
+EssentialsX is a plugin for Paper, Bukkit, and Spigot servers that contains essential server commands such as `/tpa`, `/sethome`, and more.
 
 ## LowFrame Commands
 
-On LowFrame, EssentialsX provides the following commands.  
+On LowFrame, EssentialsX provides the following commands.
+
 | Command | What it does |
 
 |---|---|
@@ -52,18 +53,24 @@ On LowFrame, EssentialsX provides the following commands.
 | `/warps` | Shows the available server warps. |
 
 | `/warpinfo <name>` | Shows information about a warp. |
-  
-  
-## Server Setup  
-For server owners, here is a guide on how to set it up.  
-  
-### Requirements  
-1. LuckPerms  
-2. Vault  
-### Starting Up  
-In game, run /lp editor  
-Go to the default group in the editor. You can add the following permission for the command.  
-# EssentialsX Commands
+
+## Server Setup
+
+For server owners, here is a guide on how to set it up.
+
+### Requirements
+
+1. LuckPerms
+
+2. Vault
+
+### Starting Up
+
+In game, run `/lp editor`.
+
+Go to the default group in the editor. You can add the following permission for each command.
+
+## EssentialsX Commands
 
 This table lists the main permission required to access each EssentialsX command. Some commands also have extra permissions for actions such as targeting other players, bypassing limits, using specific items, or accessing individual warps and kits.
 
@@ -75,328 +82,324 @@ This table lists the main permission required to access each EssentialsX command
 
 | `/antioch` | `essentials.antioch` | A little surprise for operators. |
 
-| `/anvil` | `essentials.anvil` | Opens up an Anvil. |
+| `/anvil` | `essentials.anvil` | Opens an anvil. |
 
-| `/back` | `essentials.back` | Teleports you to your location prior to tp/spawn/warp. |
+| `/back` | `essentials.back` | Teleports you to your location before teleporting, spawning, or warping. |
 
-| `/backup` | `essentials.backup` | Runs the backup if configured. |
+| `/backup` | `essentials.backup` | Runs the server backup if configured. |
 
-| `/balance` | `essentials.balance` | States the current balance of a player. |
+| `/balance` | `essentials.balance` | Shows a player's current balance. |
 
-| `/balancetop` | `essentials.balancetop` | Gets the top balance values. |
+| `/balancetop` | `essentials.balancetop` | Shows the players with the highest balances. |
 
 | `/ban` | `essentials.ban` | Bans a player. |
 
 | `/banip` | `essentials.banip` | Bans an IP address. |
 
-| `/beezooka` | `essentials.beezooka` | Throw an exploding bee at your opponent. |
+| `/beezooka` | `essentials.beezooka` | Throws an exploding bee. |
 
-| `/bigtree` | `essentials.bigtree` | Spawn a big tree where you are looking. |
+| `/bigtree` | `essentials.bigtree` | Spawns a large tree where you are looking. |
 
-| `/book` | `essentials.book` | Allows reopening and editing of sealed books. |
+| `/book` | `essentials.book` | Allows reopening and editing signed books. |
 
-| `/bottom` | `essentials.bottom` | Teleport to the lowest block at your current position. |
+| `/bottom` | `essentials.bottom` | Teleports to the lowest safe block at your current position. |
 
 | `/break` | `essentials.break` | Breaks the block you are looking at. |
 
 | `/broadcast` | `essentials.broadcast` | Broadcasts a message to the entire server. |
 
-| `/broadcastworld` | `essentials.broadcastworld` | Broadcasts a message to a world. |
+| `/broadcastworld` | `essentials.broadcastworld` | Broadcasts a message to a specific world. |
 
-| `/burn` | `essentials.burn` | Set a player on fire. |
+| `/burn` | `essentials.burn` | Sets a player on fire. |
 
-| `/cartographytable` | `essentials.cartographytable` | Opens up a cartography table. |
+| `/cartographytable` | `essentials.cartographytable` | Opens a cartography table. |
 
-| `/clearinventory` | `essentials.clearinventory` | Clear all items in your inventory. |
+| `/clearinventory` | `essentials.clearinventory` | Clears the selected player's inventory. |
 
-| `/clearinventoryconfirmtoggle` | `essentials.clearinventoryconfirmtoggle` | Toggles whether you are prompted to confirm inventory clears. |
+| `/clearinventoryconfirmtoggle` | `essentials.clearinventoryconfirmtoggle` | Toggles inventory-clear confirmation prompts. |
 
-| `/compass` | `essentials.compass` | Describes your current bearing. |
+| `/compass` | `essentials.compass` | Shows your current direction. |
 
-| `/condense` | `essentials.condense` | Condenses items into a more compact blocks. |
+| `/condense` | `essentials.condense` | Converts items into more compact forms, such as ingots into blocks. |
 
-| `/createkit` | `essentials.createkit` | Create a kit in game! |
+| `/createkit` | `essentials.createkit` | Creates a kit in game. |
 
-| `/customtext` | `essentials.customtext` | Allows you to create custom text commands. |
+| `/customtext` | `essentials.customtext` | Allows access to configured custom-text commands. |
 
-| `/delhome` | `essentials.delhome` | Removes a home. |
+| `/delhome` | `essentials.delhome` | Deletes a home. |
 
-| `/deljail` | `essentials.deljail` | Removes a jail. |
+| `/deljail` | `essentials.deljail` | Deletes a jail. |
 
-| `/delkit` | `essentials.delkit` | Deletes the specified kit. |
+| `/delkit` | `essentials.delkit` | Deletes a kit. |
 
-| `/delwarp` | `essentials.delwarp` | Deletes the specified warp. |
+| `/delwarp` | `essentials.delwarp` | Deletes a warp. |
 
-| `/depth` | `essentials.depth` | States current depth, relative to sea level. |
+| `/depth` | `essentials.depth` | Shows your depth relative to sea level. |
 
-| `/discord` | `essentials.discord` | Sends the discord invite link to the player. |
+| `/discord` | `essentials.discord` | Shows the server's Discord invitation. |
 
-| `/discordbroadcast` | `essentials.discordbroadcast` | Broadcasts a message to the specified Discord channel. |
+| `/discordbroadcast` | `essentials.discordbroadcast` | Broadcasts a message to a Discord channel. |
 
-| `/disposal` | `essentials.disposal` | Opens a portable disposal menu. |
+| `/disposal` | `essentials.disposal` | Opens a portable disposal inventory. |
 
-| `/eco` | `essentials.eco` | Manages the server economy. |
+| `/eco` | `essentials.eco` | Manages player balances and the server economy. |
 
 | `/editsign` | `essentials.editsign` | Edits a sign in the world. |
 
-| `/enchant` | `essentials.enchant` | Enchants the item the user is holding. |
+| `/enchant` | `essentials.enchant` | Enchants the item being held. |
 
-| `/enderchest` | `essentials.enderchest` | Lets you see inside an enderchest. |
+| `/enderchest` | `essentials.enderchest` | Opens an Ender Chest. |
 
-| `/essentials` | `essentials.essentials` | Reloads essentials. |
+| `/essentials` | `essentials.essentials` | Shows EssentialsX information or reloads the plugin. |
 
-| `/exp` | `essentials.exp` | Give, set, reset, or look at a players experience. |
+| `/exp` | `essentials.exp` | Gives, sets, resets, or checks player experience. |
 
-| `/ext` | `essentials.ext` | Extinguish players. |
+| `/ext` | `essentials.ext` | Extinguishes a player. |
 
-| `/feed` | `essentials.feed` | Satisfy the hunger. |
+| `/feed` | `essentials.feed` | Restores a player's hunger. |
 
-| `/fireball` | `essentials.fireball` | Throw a fireball or other assorted projectiles. |
+| `/fireball` | `essentials.fireball` | Launches a fireball or another projectile. |
 
-| `/firework` | `essentials.firework` | Allows you to modify a stack of fireworks. |
+| `/firework` | `essentials.firework` | Creates or modifies fireworks. |
 
-| `/fly` | `essentials.fly` | Take off, and soar! |
+| `/fly` | `essentials.fly` | Enables or disables flight. |
 
-| `/gamemode` | `essentials.gamemode` | Change player gamemode. |
+| `/gamemode` | `essentials.gamemode` | Changes a player's game mode. |
 
-| `/gc` | `essentials.gc` | Reports memory, uptime and tick info. |
+| `/gc` | `essentials.gc` | Shows memory, uptime, TPS, and server information. |
 
-| `/getpos` | `essentials.getpos` | Get your current coordinates or those of a player. |
+| `/getpos` | `essentials.getpos` | Shows your coordinates or another player's coordinates. |
 
-| `/give` | `essentials.give` | Give a player an item. |
+| `/give` | `essentials.give` | Gives an item to a player. |
 
-| `/god` | `essentials.god` | Enables your godly powers. |
+| `/god` | `essentials.god` | Enables or disables god mode. |
 
-| `/grindstone` | `essentials.grindstone` | Opens up a grindstone. |
+| `/grindstone` | `essentials.grindstone` | Opens a grindstone. |
 
-| `/hat` | `essentials.hat` | Get some cool new headgear. |
+| `/hat` | `essentials.hat` | Places the item in your hand on your head. |
 
-| `/heal` | `essentials.heal` | Heals you or the given player. |
+| `/heal` | `essentials.heal` | Restores a player's health. |
 
-| `/help` | `essentials.help` | Views a list of available commands. |
+| `/help` | `essentials.help` | Shows available commands. |
 
-| `/helpop` | `essentials.helpop` | Message online admins. |
+| `/helpop` | `essentials.helpop` | Sends a message to online server staff. |
 
-| `/home` | `essentials.home` | Teleport to your home. |
+| `/home` | `essentials.home` | Teleports to a home. |
 
-| `/ice` | `essentials.ice` | Cools a player off. |
+| `/ice` | `essentials.ice` | Freezes or cools a player. |
 
-| `/ignore` | `essentials.ignore` | Ignore or unignore other players. |
+| `/ignore` | `essentials.ignore` | Ignores or stops ignoring another player. |
 
-| `/info` | `essentials.info` | Shows information set by the server owner. |
+| `/info` | `essentials.info` | Shows server information configured by the owner. |
 
-| `/invsee` | `essentials.invsee` | See the inventory of other players. |
+| `/invsee` | `essentials.invsee` | Opens another player's inventory. |
 
-| `/item` | `essentials.item` | Spawn an item. |
+| `/item` | `essentials.item` | Gives yourself an item. |
 
-| `/itemdb` | `essentials.itemdb` | Searches for an item. |
+| `/itemdb` | `essentials.itemdb` | Searches for an item name or ID. |
 
-| `/itemlore` | `essentials.itemlore` | Edit the lore of an item. |
+| `/itemlore` | `essentials.itemlore` | Edits an item's lore. |
 
-| `/itemname` | `essentials.itemname` | Names an item. |
+| `/itemname` | `essentials.itemname` | Renames an item. |
 
-| `/jailedplayers` | `essentials.jailedplayers` | List all jailed players. |
+| `/jailedplayers` | `essentials.jailedplayers` | Lists jailed players. |
 
-| `/jails` | `essentials.jails` | List all jails. |
+| `/jails` | `essentials.jails` | Lists available jails. |
 
-| `/jump` | `essentials.jump` | Jumps to the nearest block in the line of sight. |
+| `/jump` | `essentials.jump` | Teleports to the block you are looking at. |
 
-| `/kick` | `essentials.kick` | Kicks a specified player with a reason. |
+| `/kick` | `essentials.kick` | Kicks a player from the server. |
 
-| `/kickall` | `essentials.kickall` | Kicks all players off the server except the issuer. |
+| `/kickall` | `essentials.kickall` | Kicks every player except the command sender. |
 
-| `/kill` | `essentials.kill` | Kills specified player. |
+| `/kill` | `essentials.kill` | Kills a selected player. |
 
-| `/kit` | `essentials.kit` | Obtains the specified kit or views all available kits. |
+| `/kit` | `essentials.kit` | Claims a kit or lists available kits. |
 
-| `/kitreset` | `essentials.kitreset` | Resets the cooldown on the specified kit. |
+| `/kitreset` | `essentials.kitreset` | Resets a kit's cooldown. |
 
-| `/kittycannon` | `essentials.kittycannon` | Throw an exploding kitten at your opponent. |
+| `/kittycannon` | `essentials.kittycannon` | Launches an exploding kitten. |
 
-| `/lightning` | `essentials.lightning` | The power of Thor. Strike at cursor or player. |
+| `/lightning` | `essentials.lightning` | Strikes lightning at a player or location. |
 
-| `/link` | `essentials.link` | Generates a code to link your Minecraft account to Discord. |
+| `/link` | `essentials.link` | Generates a code to link Minecraft and Discord accounts. |
 
-| `/list` | `essentials.list` | List all online players. |
+| `/list` | `essentials.list` | Lists online players. |
 
-| `/loom` | `essentials.loom` | Opens up a loom. |
+| `/loom` | `essentials.loom` | Opens a loom. |
 
-| `/mail` | `essentials.mail` | Manages inter-player, intra-server mail. |
+| `/mail` | `essentials.mail` | Reads, sends, or clears in-game mail. |
 
-| `/me` | `essentials.me` | Describes an action in the context of the player. |
+| `/me` | `essentials.me` | Sends an action-style chat message. |
 
-| `/more` | `essentials.more` | Fills the item stack in hand to specified amount, or to maximum size if none is specified. |
+| `/more` | `essentials.more` | Fills the held item stack to its maximum amount. |
 
-| `/motd` | `essentials.motd` | Views the Message Of The Day. |
+| `/motd` | `essentials.motd` | Shows the message of the day. |
 
-| `/msg` | `essentials.msg` | Sends a private message to the specified player. |
+| `/msg` | `essentials.msg` | Sends a private message to another player. |
 
-| `/msgtoggle` | `essentials.msgtoggle` | Blocks receiving all private messages. |
+| `/msgtoggle` | `essentials.msgtoggle` | Enables or disables receiving private messages. |
 
 | `/mute` | `essentials.mute` | Mutes or unmutes a player. |
 
-| `/near` | `essentials.near` | Lists the players near by or around a player. |
+| `/near` | `essentials.near` | Lists nearby players. |
 
-| `/nick` | `essentials.nick` | Change your nickname or that of another player. |
+| `/nick` | `essentials.nick` | Changes a player's nickname. |
 
-| `/nuke` | `essentials.nuke` | May death rain upon them. |
+| `/nuke` | `essentials.nuke` | Drops dangerous entities or items around players. |
 
-| `/pay` | `essentials.pay` | Pays another player from your balance. |
+| `/pay` | `essentials.pay` | Sends money to another player. |
 
-| `/payconfirmtoggle` | `essentials.payconfirmtoggle` | Toggles whether you are prompted to confirm payments. |
+| `/payconfirmtoggle` | `essentials.payconfirmtoggle` | Toggles payment confirmation prompts. |
 
-| `/paytoggle` | `essentials.paytoggle` | Toggles whether you are accepting payments. |
+| `/paytoggle` | `essentials.paytoggle` | Toggles whether you accept payments. |
 
-| `/ping` | `essentials.ping` | Pong! |
+| `/ping` | `essentials.ping` | Checks whether the server is responding. |
 
-| `/playtime` | `essentials.playtime` | Shows a player's time played in game |
+| `/playtime` | `essentials.playtime` | Shows a player's total playtime. |
 
-| `/potion` | `essentials.potion` | Adds custom potion effects to a potion. |
+| `/potion` | `essentials.potion` | Adds effects to a potion. |
 
-| `/powertool` | `essentials.powertool` | Assigns a command to the item in hand. |
+| `/powertool` | `essentials.powertool` | Assigns a command to the held item. |
 
-| `/powertoollist` | `essentials.powertoollist` | Lists all current powertools. |
+| `/powertoollist` | `essentials.powertoollist` | Lists assigned power tools. |
 
-| `/powertooltoggle` | `essentials.powertooltoggle` | Enables or disables all current powertools. |
+| `/powertooltoggle` | `essentials.powertooltoggle` | Enables or disables your power tools. |
 
-| `/ptime` | `essentials.ptime` | Adjust player's client time. Add @ prefix to fix. |
+| `/ptime` | `essentials.ptime` | Changes a player's personal time. |
 
-| `/pweather` | `essentials.pweather` | Adjust a player's weather |
+| `/pweather` | `essentials.pweather` | Changes a player's personal weather. |
 
-| `/r` | `essentials.msg` | Quickly reply to the last player to message you. |
+| `/r` | `essentials.msg` | Replies to the most recent private message. |
 
-| `/realname` | `essentials.realname` | Displays the username of a user based on nick. |
+| `/realname` | `essentials.realname` | Shows the username behind a nickname. |
 
-| `/recipe` | `essentials.recipe` | Displays how to craft items. |
+| `/recipe` | `essentials.recipe` | Shows an item's crafting recipe. |
 
-| `/remove` | `essentials.remove` | Removes entities in your world. |
+| `/remove` | `essentials.remove` | Removes selected entities from the world. |
 
 | `/renamehome` | `essentials.renamehome` | Renames a home. |
 
-| `/repair` | `essentials.repair` | Repairs the durability of one or all items. |
+| `/repair` | `essentials.repair` | Repairs held items or all equipped items. |
 
-| `/rest` | `essentials.rest` | Rests you or the given player. |
+| `/rest` | `essentials.rest` | Resets a player's time since sleeping. |
 
-| `/rtoggle` | `essentials.rtoggle` | Change whether the recipient of the reply is last recipient or last sender |
+| `/rtoggle` | `essentials.rtoggle` | Changes how the reply command selects its recipient. |
 
-| `/rules` | `essentials.rules` | Views the server rules. |
+| `/rules` | `essentials.rules` | Shows the server rules. |
 
-| `/seen` | `essentials.seen` | Shows the last logout time of a player. |
+| `/seen` | `essentials.seen` | Shows when a player was last online. |
 
-| `/sell` | `essentials.sell` | Sells the item currently in your hand. |
+| `/sell` | `essentials.sell` | Sells the item in your hand. |
 
-| `/sethome` | `essentials.sethome` | Set your home to your current location. |
+| `/sethome` | `essentials.sethome` | Creates a home at your current location. |
 
-| `/setjail` | `essentials.setjail` | Creates a jail where you specified named [jailname]. |
+| `/setjail` | `essentials.setjail` | Creates a jail at your current location. |
 
-| `/setspawn` | `essentials.setspawn` | Sets the spawn point to your current position. |
+| `/setspawn` | `essentials.setspawn` | Sets the server spawn. |
 
-| `/settpr` | `essentials.settpr` | Set the random teleport location and parameters. |
+| `/settpr` | `essentials.settpr` | Configures the random-teleport location and settings. |
 
-| `/setwarp` | `essentials.setwarp` | Creates a new warp. |
+| `/setwarp` | `essentials.setwarp` | Creates a warp. |
 
-| `/setworth` | `essentials.setworth` | Set the sell value of an item. |
+| `/setworth` | `essentials.setworth` | Sets an item's selling value. |
 
 | `/setxmpp` | `essentials.setxmpp` | Sets your XMPP address. |
 
-| `/showkit` | `essentials.showkit` | Show contents of a kit. |
+| `/showkit` | `essentials.showkit` | Shows the contents of a kit. |
 
-| `/skull` | `essentials.skull` | Set the owner of a player skull |
+| `/skull` | `essentials.skull` | Changes or gives a player head. |
 
-| `/smithingtable` | `essentials.smithingtable` | Opens up a smithing table. |
+| `/smithingtable` | `essentials.smithingtable` | Opens a smithing table. |
 
-| `/socialspy` | `essentials.socialspy` | Toggles if you can see msg/mail commands in chat. |
+| `/socialspy` | `essentials.socialspy` | Shows private messages and mail sent by other players. |
 
-| `/spawn` | `essentials.spawn` | Teleports to the spawn point. |
+| `/spawn` | `essentials.spawn` | Teleports to the server spawn. |
 
-| `/spawner` | `essentials.spawner` | Change the mob type of a spawner. |
+| `/spawner` | `essentials.spawner` | Changes the mob type of a spawner. |
 
 | `/spawnmob` | `essentials.spawnmob` | Spawns a mob. |
 
-| `/speed` | `essentials.speed` | Change your speed limits. |
+| `/speed` | `essentials.speed` | Changes walking or flying speed. |
 
-| `/stonecutter` | `essentials.stonecutter` | Opens up a stonecutter. |
+| `/stonecutter` | `essentials.stonecutter` | Opens a stonecutter. |
 
-| `/sudo` | `essentials.sudo` | Make another user perform a command. |
+| `/sudo` | `essentials.sudo` | Makes another player execute a command or chat message. |
 
-| `/suicide` | `essentials.suicide` | Causes you to perish. |
+| `/suicide` | `essentials.suicide` | Respawns your in-game character. |
 
-| `/tempban` | `essentials.tempban` | Temporary ban a user. |
+| `/tempban` | `essentials.tempban` | Temporarily bans a player. |
 
-| `/tempbanip` | `essentials.tempbanip` | Temporarily ban an IP Address. |
+| `/tempbanip` | `essentials.tempbanip` | Temporarily bans an IP address. |
 
-| `/thunder` | `essentials.thunder` | Enable/disable thunder. |
+| `/thunder` | `essentials.thunder` | Enables or disables thunderstorms. |
 
-| `/time` | `essentials.time` | Display/Change the world time. Defaults to current world. |
+| `/time` | `essentials.time` | Shows or changes the world's time. |
 
-| `/togglejail` | `essentials.togglejail` | Jails/Unjails a player, TPs them to the jail specified. |
+| `/togglejail` | `essentials.togglejail` | Jails or releases a player. |
 
-| `/toggleshout` | `essentials.toggleshout` | Toggles whether you are talking in shout mode |
+| `/toggleshout` | `essentials.toggleshout` | Toggles shout chat mode. |
 
-| `/top` | `essentials.top` | Teleport to the highest block at your current position. |
+| `/top` | `essentials.top` | Teleports to the highest safe block above you. |
 
-| `/tp` | `essentials.tp` | Teleport to a player. |
+| `/tp` | `essentials.tp` | Teleports to another player. |
 
-| `/tpa` | `essentials.tpa` | Request to teleport to the specified player. |
+| `/tpa` | `essentials.tpa` | Requests to teleport to another player. |
 
-| `/tpaall` | `essentials.tpaall` | Requests all players online to teleport to you. |
+| `/tpaall` | `essentials.tpaall` | Requests that every online player teleport to you. |
 
-| `/tpacancel` | `essentials.tpacancel` | Cancel all outstanding teleport requests. Specify [player] to cancel requests with them. |
+| `/tpacancel` | `essentials.tpacancel` | Cancels outstanding teleport requests. |
 
-| `/tpaccept` | `essentials.tpaccept` | Accepts teleport requests. |
+| `/tpaccept` | `essentials.tpaccept` | Accepts an incoming teleport request. |
 
-| `/tpahere` | `essentials.tpahere` | Request that the specified player teleport to you. |
+| `/tpahere` | `essentials.tpahere` | Requests that another player teleport to you. |
 
-| `/tpall` | `essentials.tpall` | Teleport all online players to another player. |
+| `/tpall` | `essentials.tpall` | Teleports every online player to another player. |
 
-| `/tpauto` | `essentials.tpauto` | Automatically accept teleportation requests. |
+| `/tpauto` | `essentials.tpauto` | Automatically accepts teleport requests. |
 
-| `/tpdeny` | `essentials.tpdeny` | Rejects teleport requests. |
+| `/tpdeny` | `essentials.tpdeny` | Rejects a teleport request. |
 
-| `/tphere` | `essentials.tphere` | Teleport a player to you. |
+| `/tphere` | `essentials.tphere` | Teleports another player to you. |
 
-| `/tpo` | `essentials.tpo` | Teleport override for tptoggle. |
+| `/tpo` | `essentials.tpo` | Teleports while bypassing teleport restrictions. |
 
-| `/tpoffline` | `essentials.tpoffline` | Teleport to a player's last known logout location |
+| `/tpoffline` | `essentials.tpoffline` | Teleports to an offline player's last location. |
 
-| `/tpohere` | `essentials.tpohere` | Teleport here override for tptoggle. |
+| `/tpohere` | `essentials.tpohere` | Teleports another player to you while bypassing restrictions. |
 
-| `/tppos` | `essentials.tppos` | Teleport to coordinates. |
+| `/tppos` | `essentials.tppos` | Teleports to specific coordinates. |
 
-| `/tpr` | `essentials.tpr` | Teleport randomly. |
+| `/tpr` | `essentials.tpr` | Randomly teleports you. |
 
-| `/tptoggle` | `essentials.tptoggle` | Blocks all forms of teleportation. |
+| `/tptoggle` | `essentials.tptoggle` | Blocks or allows incoming teleports. |
 
-| `/tree` | `essentials.tree` | Spawn a tree where you are looking. |
+| `/tree` | `essentials.tree` | Spawns a tree where you are looking. |
 
-| `/unban` | `essentials.unban` | Unbans the specified player. |
+| `/unban` | `essentials.unban` | Unbans a player. |
 
-| `/unbanip` | `essentials.unbanip` | Unbans the specified IP address. |
+| `/unbanip` | `essentials.unbanip` | Unbans an IP address. |
 
-| `/unlimited` | `essentials.unlimited` | Allows the unlimited placing of items. |
+| `/unlimited` | `essentials.unlimited` | Provides unlimited placement or use of selected items. |
 
-| `/unlink` | `essentials.unlink` | Unlinks your Minecraft account from any associated Discord account. |
+| `/unlink` | `essentials.unlink` | Unlinks your Minecraft account from Discord. |
 
-| `/vanish` | `essentials.vanish` | Hide yourself from other players. |
+| `/vanish` | `essentials.vanish` | Hides you from other players. |
 
-| `/warp` | `essentials.warp` | List all warps or warp to the specified location. |
+| `/warp` | `essentials.warp` | Lists warps or teleports to a warp. |
 
-| `/warpinfo` | `essentials.warpinfo` | Finds location information for a specified warp. |
+| `/warpinfo` | `essentials.warpinfo` | Shows information about a warp. |
 
-| `/weather` | `essentials.weather` | Sets the weather. |
+| `/weather` | `essentials.weather` | Changes the world's weather. |
 
-| `/whois` | `essentials.whois` | Determine basic information about the specified player. |
+| `/whois` | `essentials.whois` | Shows information about a player. |
 
-| `/workbench` | `essentials.workbench` | Opens up a workbench. |
+| `/workbench` | `essentials.workbench` | Opens a crafting table. |
 
-| `/world` | `essentials.world` | Switch between worlds. |
+| `/world` | `essentials.world` | Teleports between worlds. |
 
-| `/worth` | `essentials.worth` | Calculates the worth of items in hand or as specified. |
+| `/worth` | `essentials.worth` | Shows the selling value of an item. |
 
-| `/xmpp` | `essentials.xmpp` | Sends a message to a player. |
+| `/xmpp` | `essentials.xmpp` | Sends an XMPP message to a player. |
 
-| `/xmppspy` | `essentials.xmppspy` | Toggles XMPP spy for all messages. |
-
-
-
-&nbsp;
+| `/xmppspy` | `essentials.xmppspy` | Toggles spying on XMPP messages. |
