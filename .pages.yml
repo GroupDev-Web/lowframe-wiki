@@ -1,0 +1,47 @@
+media:
+  input: content/media
+  output: /media
+  rename: safe
+  categories:
+    - image
+
+content:
+  - name: wiki
+    label: Wiki Pages
+    type: collection
+    path: content
+    format: yaml-frontmatter
+    subfolders: true
+    filename:
+      template: "{primary}.md"
+      field: create
+
+    view:
+      layout: tree
+      fields:
+        - title
+      primary: title
+
+    fields:
+      - name: title
+        label: Page Title
+        type: string
+        required: true
+
+      - name: description
+        label: Description
+        type: text
+
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+
+      - name: draft
+        label: Draft
+        type: boolean
+
+      - name: body
+        label: Page Content
+        type: rich-text
+        required: true
