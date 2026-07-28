@@ -2,10 +2,40 @@
 title: Home
 draft: false
 ---
-# **Welcome to LowFrame Wiki**
+# Welcome to the LowFrame Wiki
 
-This is the official wiki for LowFrame. This wiki contains a guide for pretty much all of the plugins, the download links, how to partner with us, and more.  
+Welcome to the official LowFrame Wiki.
 
-## IMPORTANT
+Here you can find information about joining the server, server plugins and features, useful downloads, partnership information, setup guides, commands, permissions, and more.
 
-This wiki is a **WIP.** Don't expect every plugin and every documentation to be here.
+## Join LowFrame
+
+LowFrame supports Java Edition, Bedrock Edition, and Eaglercraft.
+
+### Java Edition
+
+**Server Address:**
+
+`play.mc-lowframe.org`
+
+### Bedrock Edition
+
+**Server Address:**
+
+`54.39.152.135`
+
+**Port:**
+
+`8045`
+
+### Eaglercraft
+
+**Server Address:**
+
+`eagler.mc-lowframe.org`
+
+## Important
+
+This wiki is still a **work in progress**.
+
+Some plugins, commands, features, and guides may not be documented yet. More pages and information will be added over time.
