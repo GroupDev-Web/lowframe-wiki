@@ -4,55 +4,51 @@ draft: false
 ---
 # EssentialsX
 
-EssentialsX is a plugin for Paper, Bukkit, and Spigot servers that contains essential server commands such as `/tpa`, `/sethome`, and more.
+EssentialsX is a plugin for Paper, Bukkit, and Spigot servers that provides essential server commands such as `/tpa`, `/sethome`, and more.
 
 ## LowFrame Commands
 
-On LowFrame, EssentialsX provides the following commands.
+On LowFrame, EssentialsX provides the following commands:
 
-| Command | What it does |
+- *`/afk`** — Marks you as AFK or removes your AFK status.
 
-|---|---|
+- *`/back`** — Teleports you to your previous location.
 
-| `/afk` | Marks you as AFK or removes your AFK status. |
+- *`/discord`** — Shows the server's Discord link.
 
-| `/back` | Teleports you to your previous location. |
+- *`/enderchest`** — Opens your Ender Chest.
 
-| `/discord` | Shows the server's Discord link. |
+- *`/home [name]`** — Teleports you to one of your homes.
 
-| `/enderchest` | Opens your Ender Chest. |
+- *`/mail read`** — Shows your in-game mail.
 
-| `/home [name]` | Teleports you to one of your homes. |
+- *`/mail send <player> <message>`** — Sends mail to another player.
 
-| `/mail read` | Shows your in-game mail. |
+- *`/motd`** — Shows the server's message of the day.
 
-| `/mail send <player> <message>` | Sends mail to another player. |
+- *`/ping`** — Checks whether the server is responding.
 
-| `/motd` | Shows the server's message of the day. |
+- *`/rtp`** — Randomly teleports you to another location.
 
-| `/ping` | Checks whether the server is responding. |
+- *`/sethome [name]`** — Creates a home at your current location.
 
-| `/rtp` | Randomly teleports you to another location. |
+- *`/spawn`** — Teleports you to the server spawn.
 
-| `/sethome [name]` | Creates a home at your current location. |
+- *`/suicide`** — Respawns your in-game character.
 
-| `/spawn` | Teleports you to the server spawn. |
+- *`/tpa <player>`** — Requests to teleport to another player.
 
-| `/suicide` | Respawns your in-game character. |
+- *`/tpacancel`** — Cancels your current teleport request.
 
-| `/tpa <player>` | Requests to teleport to another player. |
+- *`/tpaccept`** — Accepts an incoming teleport request.
 
-| `/tpacancel` | Cancels your current teleport request. |
+- *`/tpahere <player>`** — Requests that another player teleport to you.
 
-| `/tpaccept` | Accepts an incoming teleport request. |
+- *`/warp <name>`** — Teleports you to a server warp.
 
-| `/tpahere <player>` | Requests that another player teleport to you. |
+- *`/warps`** — Shows the available server warps.
 
-| `/warp <name>` | Teleports you to a server warp. |
-
-| `/warps` | Shows the available server warps. |
-
-| `/warpinfo <name>` | Shows information about a warp. |
+- *`/warpinfo <name>`** — Shows information about a warp.
 
 ## Server Setup
 
@@ -68,338 +64,2118 @@ For server owners, here is a guide on how to set it up.
 
 In game, run `/lp editor`.
 
-Go to the default group in the editor. You can add the following permission for each command.
+Open the default group in the editor, then add the permission required for each command.
 
 ## EssentialsX Commands
 
-This table lists the main permission required to access each EssentialsX command. Some commands also have extra permissions for actions such as targeting other players, bypassing limits, using specific items, or accessing individual warps and kits.
+Each command below includes its main permission and a short description. Some commands have additional permissions for targeting other players, bypassing limits, accessing specific kits, or using individual warps.
 
-| Command | Permission | What it does |
+### A
 
-|---|---|---|
+- *`/afk`**
 
-| `/afk` | `essentials.afk` | Marks you as away-from-keyboard. |
+  - **Permission:** `essentials.afk`
 
-| `/antioch` | `essentials.antioch` | A little surprise for operators. |
+  - **What it does:** Marks you as away-from-keyboard.
 
-| `/anvil` | `essentials.anvil` | Opens an anvil. |
+- *`/antioch`**
 
-| `/back` | `essentials.back` | Teleports you to your location before teleporting, spawning, or warping. |
+  - **Permission:** `essentials.antioch`
 
-| `/backup` | `essentials.backup` | Runs the server backup if configured. |
+  - **What it does:** A little surprise for operators.
 
-| `/balance` | `essentials.balance` | Shows a player's current balance. |
+- *`/anvil`**
 
-| `/balancetop` | `essentials.balancetop` | Shows the players with the highest balances. |
+  - **Permission:** `essentials.anvil`
 
-| `/ban` | `essentials.ban` | Bans a player. |
+  - **What it does:** Opens an anvil.
 
-| `/banip` | `essentials.banip` | Bans an IP address. |
+### B
 
-| `/beezooka` | `essentials.beezooka` | Throws an exploding bee. |
+- *`/back`**
 
-| `/bigtree` | `essentials.bigtree` | Spawns a large tree where you are looking. |
+  - **Permission:** `essentials.back`
 
-| `/book` | `essentials.book` | Allows reopening and editing signed books. |
+  - **What it does:** Teleports you to your location before teleporting, spawning, or warping.
 
-| `/bottom` | `essentials.bottom` | Teleports to the lowest safe block at your current position. |
+- *`/backup`**
 
-| `/break` | `essentials.break` | Breaks the block you are looking at. |
+  - **Permission:** `essentials.backup`
 
-| `/broadcast` | `essentials.broadcast` | Broadcasts a message to the entire server. |
+  - **What it does:** Runs the server backup if configured.
 
-| `/broadcastworld` | `essentials.broadcastworld` | Broadcasts a message to a specific world. |
+- *`/balance`**
 
-| `/burn` | `essentials.burn` | Sets a player on fire. |
+  - **Permission:** `essentials.balance`
 
-| `/cartographytable` | `essentials.cartographytable` | Opens a cartography table. |
+  - **What it does:** Shows a player's current balance.
 
-| `/clearinventory` | `essentials.clearinventory` | Clears the selected player's inventory. |
+- *`/balancetop`**
 
-| `/clearinventoryconfirmtoggle` | `essentials.clearinventoryconfirmtoggle` | Toggles inventory-clear confirmation prompts. |
+  - **Permission:** `essentials.balancetop`
 
-| `/compass` | `essentials.compass` | Shows your current direction. |
+  - **What it does:** Shows the players with the highest balances.
 
-| `/condense` | `essentials.condense` | Converts items into more compact forms, such as ingots into blocks. |
+- *`/ban`**
 
-| `/createkit` | `essentials.createkit` | Creates a kit in game. |
+  - **Permission:** `essentials.ban`
 
-| `/customtext` | `essentials.customtext` | Allows access to configured custom-text commands. |
+  - **What it does:** Bans a player.
 
-| `/delhome` | `essentials.delhome` | Deletes a home. |
+- *`/banip`**
 
-| `/deljail` | `essentials.deljail` | Deletes a jail. |
+  - **Permission:** `essentials.banip`
 
-| `/delkit` | `essentials.delkit` | Deletes a kit. |
+  - **What it does:** Bans an IP address.
 
-| `/delwarp` | `essentials.delwarp` | Deletes a warp. |
+- *`/beezooka`**
 
-| `/depth` | `essentials.depth` | Shows your depth relative to sea level. |
+  - **Permission:** `essentials.beezooka`
 
-| `/discord` | `essentials.discord` | Shows the server's Discord invitation. |
+  - **What it does:** Throws an exploding bee.
 
-| `/discordbroadcast` | `essentials.discordbroadcast` | Broadcasts a message to a Discord channel. |
+- *`/bigtree`**
 
-| `/disposal` | `essentials.disposal` | Opens a portable disposal inventory. |
+  - **Permission:** `essentials.bigtree`
 
-| `/eco` | `essentials.eco` | Manages player balances and the server economy. |
+  - **What it does:** Spawns a large tree where you are looking.
 
-| `/editsign` | `essentials.editsign` | Edits a sign in the world. |
+- *`/book`**
 
-| `/enchant` | `essentials.enchant` | Enchants the item being held. |
+  - **Permission:** `essentials.book`
 
-| `/enderchest` | `essentials.enderchest` | Opens an Ender Chest. |
+  - **What it does:** Allows reopening and editing signed books.
 
-| `/essentials` | `essentials.essentials` | Shows EssentialsX information or reloads the plugin. |
+- *`/bottom`**
 
-| `/exp` | `essentials.exp` | Gives, sets, resets, or checks player experience. |
+  - **Permission:** `essentials.bottom`
 
-| `/ext` | `essentials.ext` | Extinguishes a player. |
+  - **What it does:** Teleports to the lowest safe block at your current position.
 
-| `/feed` | `essentials.feed` | Restores a player's hunger. |
+- *`/break`**
 
-| `/fireball` | `essentials.fireball` | Launches a fireball or another projectile. |
+  - **Permission:** `essentials.break`
 
-| `/firework` | `essentials.firework` | Creates or modifies fireworks. |
+  - **What it does:** Breaks the block you are looking at.
 
-| `/fly` | `essentials.fly` | Enables or disables flight. |
+- *`/broadcast`**
 
-| `/gamemode` | `essentials.gamemode` | Changes a player's game mode. |
+  - **Permission:** `essentials.broadcast`
 
-| `/gc` | `essentials.gc` | Shows memory, uptime, TPS, and server information. |
+  - **What it does:** Broadcasts a message to the entire server.
 
-| `/getpos` | `essentials.getpos` | Shows your coordinates or another player's coordinates. |
+- *`/broadcastworld`**
 
-| `/give` | `essentials.give` | Gives an item to a player. |
+  - **Permission:** `essentials.broadcastworld`
 
-| `/god` | `essentials.god` | Enables or disables god mode. |
+  - **What it does:** Broadcasts a message to a specific world.
 
-| `/grindstone` | `essentials.grindstone` | Opens a grindstone. |
+- *`/burn`**
 
-| `/hat` | `essentials.hat` | Places the item in your hand on your head. |
+  - **Permission:** `essentials.burn`
 
-| `/heal` | `essentials.heal` | Restores a player's health. |
+  - **What it does:** Sets a player on fire.
 
-| `/help` | `essentials.help` | Shows available commands. |
+### C
 
-| `/helpop` | `essentials.helpop` | Sends a message to online server staff. |
+- *`/cartographytable`**
 
-| `/home` | `essentials.home` | Teleports to a home. |
+  - **Permission:** `essentials.cartographytable`
 
-| `/ice` | `essentials.ice` | Freezes or cools a player. |
+  - **What it does:** Opens a cartography table.
 
-| `/ignore` | `essentials.ignore` | Ignores or stops ignoring another player. |
+- *`/clearinventory`**
 
-| `/info` | `essentials.info` | Shows server information configured by the owner. |
+  - **Permission:** `essentials.clearinventory`
 
-| `/invsee` | `essentials.invsee` | Opens another player's inventory. |
+  - **What it does:** Clears a player's inventory.
 
-| `/item` | `essentials.item` | Gives yourself an item. |
+- *`/clearinventoryconfirmtoggle`**
 
-| `/itemdb` | `essentials.itemdb` | Searches for an item name or ID. |
+  - **Permission:** `essentials.clearinventoryconfirmtoggle`
 
-| `/itemlore` | `essentials.itemlore` | Edits an item's lore. |
+  - **What it does:** Toggles inventory-clear confirmation prompts.
 
-| `/itemname` | `essentials.itemname` | Renames an item. |
+- *`/compass`**
 
-| `/jailedplayers` | `essentials.jailedplayers` | Lists jailed players. |
+  - **Permission:** `essentials.compass`
 
-| `/jails` | `essentials.jails` | Lists available jails. |
+  - **What it does:** Shows your current direction.
 
-| `/jump` | `essentials.jump` | Teleports to the block you are looking at. |
+- *`/condense`**
 
-| `/kick` | `essentials.kick` | Kicks a player from the server. |
+  - **Permission:** `essentials.condense`
 
-| `/kickall` | `essentials.kickall` | Kicks every player except the command sender. |
+  - **What it does:** Converts items into more compact forms, such as ingots into blocks.
 
-| `/kill` | `essentials.kill` | Kills a selected player. |
+- *`/createkit`**
 
-| `/kit` | `essentials.kit` | Claims a kit or lists available kits. |
+  - **Permission:** `essentials.createkit`
 
-| `/kitreset` | `essentials.kitreset` | Resets a kit's cooldown. |
+  - **What it does:** Creates a kit in game.
 
-| `/kittycannon` | `essentials.kittycannon` | Launches an exploding kitten. |
+- *`/customtext`**
 
-| `/lightning` | `essentials.lightning` | Strikes lightning at a player or location. |
+  - **Permission:** `essentials.customtext`
 
-| `/link` | `essentials.link` | Generates a code to link Minecraft and Discord accounts. |
+  - **What it does:** Allows access to configured custom-text commands.
 
-| `/list` | `essentials.list` | Lists online players. |
+### D
 
-| `/loom` | `essentials.loom` | Opens a loom. |
+- *`/delhome`**
 
-| `/mail` | `essentials.mail` | Reads, sends, or clears in-game mail. |
+  - **Permission:** `essentials.delhome`
 
-| `/me` | `essentials.me` | Sends an action-style chat message. |
+  - **What it does:** Deletes a home.
 
-| `/more` | `essentials.more` | Fills the held item stack to its maximum amount. |
+- *`/deljail`**
 
-| `/motd` | `essentials.motd` | Shows the message of the day. |
+  - **Permission:** `essentials.deljail`
 
-| `/msg` | `essentials.msg` | Sends a private message to another player. |
+  - **What it does:** Deletes a jail.
 
-| `/msgtoggle` | `essentials.msgtoggle` | Enables or disables receiving private messages. |
+- *`/delkit`**
 
-| `/mute` | `essentials.mute` | Mutes or unmutes a player. |
+  - **Permission:** `essentials.delkit`
 
-| `/near` | `essentials.near` | Lists nearby players. |
+  - **What it does:** Deletes a kit.
 
-| `/nick` | `essentials.nick` | Changes a player's nickname. |
+- *`/delwarp`**
 
-| `/nuke` | `essentials.nuke` | Drops dangerous entities or items around players. |
+  - **Permission:** `essentials.delwarp`
 
-| `/pay` | `essentials.pay` | Sends money to another player. |
+  - **What it does:** Deletes a warp.
 
-| `/payconfirmtoggle` | `essentials.payconfirmtoggle` | Toggles payment confirmation prompts. |
+- *`/depth`**
 
-| `/paytoggle` | `essentials.paytoggle` | Toggles whether you accept payments. |
+  - **Permission:** `essentials.depth`
 
-| `/ping` | `essentials.ping` | Checks whether the server is responding. |
+  - **What it does:** Shows your depth relative to sea level.
 
-| `/playtime` | `essentials.playtime` | Shows a player's total playtime. |
+- *`/discord`**
 
-| `/potion` | `essentials.potion` | Adds effects to a potion. |
+  - **Permission:** `essentials.discord`
 
-| `/powertool` | `essentials.powertool` | Assigns a command to the held item. |
+  - **What it does:** Shows the server's Discord invitation.
 
-| `/powertoollist` | `essentials.powertoollist` | Lists assigned power tools. |
+- *`/discordbroadcast`**
 
-| `/powertooltoggle` | `essentials.powertooltoggle` | Enables or disables your power tools. |
+  - **Permission:** `essentials.discordbroadcast`
 
-| `/ptime` | `essentials.ptime` | Changes a player's personal time. |
+  - **What it does:** Broadcasts a message to a Discord channel.
 
-| `/pweather` | `essentials.pweather` | Changes a player's personal weather. |
+- *`/disposal`**
 
-| `/r` | `essentials.msg` | Replies to the most recent private message. |
+  - **Permission:** `essentials.disposal`
 
-| `/realname` | `essentials.realname` | Shows the username behind a nickname. |
+  - **What it does:** Opens a portable disposal inventory.
 
-| `/recipe` | `essentials.recipe` | Shows an item's crafting recipe. |
+### E
 
-| `/remove` | `essentials.remove` | Removes selected entities from the world. |
+- *`/eco`**
 
-| `/renamehome` | `essentials.renamehome` | Renames a home. |
+  - **Permission:** `essentials.eco`
 
-| `/repair` | `essentials.repair` | Repairs held items or all equipped items. |
+  - **What it does:** Manages player balances and the server economy.
 
-| `/rest` | `essentials.rest` | Resets a player's time since sleeping. |
+- *`/editsign`**
 
-| `/rtoggle` | `essentials.rtoggle` | Changes how the reply command selects its recipient. |
+  - **Permission:** `essentials.editsign`
 
-| `/rules` | `essentials.rules` | Shows the server rules. |
+  - **What it does:** Edits a sign in the world.
 
-| `/seen` | `essentials.seen` | Shows when a player was last online. |
+- *`/enchant`**
 
-| `/sell` | `essentials.sell` | Sells the item in your hand. |
+  - **Permission:** `essentials.enchant`
 
-| `/sethome` | `essentials.sethome` | Creates a home at your current location. |
+  - **What it does:** Enchants the item being held.
 
-| `/setjail` | `essentials.setjail` | Creates a jail at your current location. |
+- *`/enderchest`**
 
-| `/setspawn` | `essentials.setspawn` | Sets the server spawn. |
+  - **Permission:** `essentials.enderchest`
 
-| `/settpr` | `essentials.settpr` | Configures the random-teleport location and settings. |
+  - **What it does:** Opens an Ender Chest.
 
-| `/setwarp` | `essentials.setwarp` | Creates a warp. |
+- *`/essentials`**
 
-| `/setworth` | `essentials.setworth` | Sets an item's selling value. |
+  - **Permission:** `essentials.essentials`
 
-| `/setxmpp` | `essentials.setxmpp` | Sets your XMPP address. |
+  - **What it does:** Shows EssentialsX information or reloads the plugin.
 
-| `/showkit` | `essentials.showkit` | Shows the contents of a kit. |
+- *`/exp`**
 
-| `/skull` | `essentials.skull` | Changes or gives a player head. |
+  - **Permission:** `essentials.exp`
 
-| `/smithingtable` | `essentials.smithingtable` | Opens a smithing table. |
+  - **What it does:** Gives, sets, resets, or checks player experience.
 
-| `/socialspy` | `essentials.socialspy` | Shows private messages and mail sent by other players. |
+- *`/ext`**
 
-| `/spawn` | `essentials.spawn` | Teleports to the server spawn. |
+  - **Permission:** `essentials.ext`
 
-| `/spawner` | `essentials.spawner` | Changes the mob type of a spawner. |
+  - **What it does:** Extinguishes a player.
 
-| `/spawnmob` | `essentials.spawnmob` | Spawns a mob. |
+### F
 
-| `/speed` | `essentials.speed` | Changes walking or flying speed. |
+- *`/feed`**
 
-| `/stonecutter` | `essentials.stonecutter` | Opens a stonecutter. |
+  - **Permission:** `essentials.feed`
 
-| `/sudo` | `essentials.sudo` | Makes another player execute a command or chat message. |
+  - **What it does:** Restores a player's hunger.
 
-| `/suicide` | `essentials.suicide` | Respawns your in-game character. |
+- *`/fireball`**
 
-| `/tempban` | `essentials.tempban` | Temporarily bans a player. |
+  - **Permission:** `essentials.fireball`
 
-| `/tempbanip` | `essentials.tempbanip` | Temporarily bans an IP address. |
+  - **What it does:** Launches a fireball or another projectile.
 
-| `/thunder` | `essentials.thunder` | Enables or disables thunderstorms. |
+- *`/firework`**
 
-| `/time` | `essentials.time` | Shows or changes the world's time. |
+  - **Permission:** `essentials.firework`
 
-| `/togglejail` | `essentials.togglejail` | Jails or releases a player. |
+  - **What it does:** Creates or modifies fireworks.
 
-| `/toggleshout` | `essentials.toggleshout` | Toggles shout chat mode. |
+- *`/fly`**
 
-| `/top` | `essentials.top` | Teleports to the highest safe block above you. |
+  - **Permission:** `essentials.fly`
 
-| `/tp` | `essentials.tp` | Teleports to another player. |
+  - **What it does:** Enables or disables flight.
 
-| `/tpa` | `essentials.tpa` | Requests to teleport to another player. |
+### G
 
-| `/tpaall` | `essentials.tpaall` | Requests that every online player teleport to you. |
+- *`/gamemode`**
 
-| `/tpacancel` | `essentials.tpacancel` | Cancels outstanding teleport requests. |
+  - **Permission:** `essentials.gamemode`
 
-| `/tpaccept` | `essentials.tpaccept` | Accepts an incoming teleport request. |
+  - **What it does:** Changes a player's game mode.
 
-| `/tpahere` | `essentials.tpahere` | Requests that another player teleport to you. |
+- *`/gc`**
 
-| `/tpall` | `essentials.tpall` | Teleports every online player to another player. |
+  - **Permission:** `essentials.gc`
 
-| `/tpauto` | `essentials.tpauto` | Automatically accepts teleport requests. |
+  - **What it does:** Shows memory, uptime, TPS, and server information.
 
-| `/tpdeny` | `essentials.tpdeny` | Rejects a teleport request. |
+- *`/getpos`**
 
-| `/tphere` | `essentials.tphere` | Teleports another player to you. |
+  - **Permission:** `essentials.getpos`
 
-| `/tpo` | `essentials.tpo` | Teleports while bypassing teleport restrictions. |
+  - **What it does:** Shows your coordinates or another player's coordinates.
 
-| `/tpoffline` | `essentials.tpoffline` | Teleports to an offline player's last location. |
+- *`/give`**
 
-| `/tpohere` | `essentials.tpohere` | Teleports another player to you while bypassing restrictions. |
+  - **Permission:** `essentials.give`
 
-| `/tppos` | `essentials.tppos` | Teleports to specific coordinates. |
+  - **What it does:** Gives an item to a player.
 
-| `/tpr` | `essentials.tpr` | Randomly teleports you. |
+- *`/god`**
 
-| `/tptoggle` | `essentials.tptoggle` | Blocks or allows incoming teleports. |
+  - **Permission:** `essentials.god`
 
-| `/tree` | `essentials.tree` | Spawns a tree where you are looking. |
+  - **What it does:** Enables or disables god mode.
 
-| `/unban` | `essentials.unban` | Unbans a player. |
+- *`/grindstone`**
 
-| `/unbanip` | `essentials.unbanip` | Unbans an IP address. |
+  - **Permission:** `essentials.grindstone`
 
-| `/unlimited` | `essentials.unlimited` | Provides unlimited placement or use of selected items. |
+  - **What it does:** Opens a grindstone.
 
-| `/unlink` | `essentials.unlink` | Unlinks your Minecraft account from Discord. |
+### H
 
-| `/vanish` | `essentials.vanish` | Hides you from other players. |
+- *`/hat`**
 
-| `/warp` | `essentials.warp` | Lists warps or teleports to a warp. |
+  - **Permission:** `essentials.hat`
 
-| `/warpinfo` | `essentials.warpinfo` | Shows information about a warp. |
+  - **What it does:** Places the item in your hand on your head.
 
-| `/weather` | `essentials.weather` | Changes the world's weather. |
+- *`/heal`**
 
-| `/whois` | `essentials.whois` | Shows information about a player. |
+  - **Permission:** `essentials.heal`
 
-| `/workbench` | `essentials.workbench` | Opens a crafting table. |
+  - **What it does:** Restores a player's health.
 
-| `/world` | `essentials.world` | Teleports between worlds. |
+- *`/help`**
 
-| `/worth` | `essentials.worth` | Shows the selling value of an item. |
+  - **Permission:** `essentials.help`
 
-| `/xmpp` | `essentials.xmpp` | Sends an XMPP message to a player. |
+  - **What it does:** Shows available commands.
 
-| `/xmppspy` | `essentials.xmppspy` | Toggles spying on XMPP messages. |
+- *`/helpop`**
+
+  - **Permission:** `essentials.helpop`
+
+  - **What it does:** Sends a message to online server staff.
+
+- *`/home`**
+
+  - **Permission:** `essentials.home`
+
+  - **What it does:** Teleports to a home.
+
+### I
+
+- *`/ice`**
+
+  - **Permission:** `essentials.ice`
+
+  - **What it does:** Freezes or cools a player.
+
+- *`/ignore`**
+
+  - **Permission:** `essentials.ignore`
+
+  - **What it does:** Ignores or stops ignoring another player.
+
+- *`/info`**
+
+  - **Permission:** `essentials.info`
+
+  - **What it does:** Shows server information configured by the owner.
+
+- *`/invsee`**
+
+  - **Permission:** `essentials.invsee`
+
+  - **What it does:** Opens another player's inventory.
+
+- *`/item`**
+
+  - **Permission:** `essentials.item`
+
+  - **What it does:** Gives yourself an item.
+
+- *`/itemdb`**
+
+  - **Permission:** `essentials.itemdb`
+
+  - **What it does:** Searches for an item name or ID.
+
+- *`/itemlore`**
+
+  - **Permission:** `essentials.itemlore`
+
+  - **What it does:** Edits an item's lore.
+
+- *`/itemname`**
+
+  - **Permission:** `essentials.itemname`
+
+  - **What it does:** Renames an item.
+
+### J
+
+- *`/jailedplayers`**
+
+  - **Permission:** `essentials.jailedplayers`
+
+  - **What it does:** Lists jailed players.
+
+- *`/jails`**
+
+  - **Permission:** `essentials.jails`
+
+  - **What it does:** Lists available jails.
+
+- *`/jump`**
+
+  - **Permission:** `essentials.jump`
+
+  - **What it does:** Teleports to the block you are looking at.
+
+### K
+
+- *`/kick`**
+
+  - **Permission:** `essentials.kick`
+
+  - **What it does:** Kicks a player from the server.
+
+- *`/kickall`**
+
+  - **Permission:** `essentials.kickall`
+
+  - **What it does:** Kicks every player except the command sender.
+
+- *`/kill`**
+
+  - **Permission:** `essentials.kill`
+
+  - **What it does:** Kills a selected player.
+
+- *`/kit`**
+
+  - **Permission:** `essentials.kit`
+
+  - **What it does:** Claims a kit or lists available kits.
+
+- *`/kitreset`**
+
+  - **Permission:** `essentials.kitreset`
+
+  - **What it does:** Resets a kit's cooldown.
+
+- *`/kittycannon`**
+
+  - **Permission:** `essentials.kittycannon`
+
+  - **What it does:** Launches an exploding kitten.
+
+### L
+
+- *`/lightning`**
+
+  - **Permission:** `essentials.lightning`
+
+  - **What it does:** Strikes lightning at a player or location.
+
+- *`/link`**
+
+  - **Permission:** `essentials.link`
+
+  - **What it does:** Generates a code to link Minecraft and Discord accounts.
+
+- *`/list`**
+
+  - **Permission:** `essentials.list`
+
+  - **What it does:** Lists online players.
+
+- *`/loom`**
+
+  - **Permission:** `essentials.loom`
+
+  - **What it does:** Opens a loom.
+
+### M
+
+- *`/mail`**
+
+  - **Permission:** `essentials.mail`
+
+  - **What it does:** Reads, sends, or clears in-game mail.
+
+- *`/me`**
+
+  - **Permission:** `essentials.me`
+
+  - **What it does:** Sends an action-style chat message.
+
+- *`/more`**
+
+  - **Permission:** `essentials.more`
+
+  - **What it does:** Fills the held item stack to its maximum amount.
+
+- *`/motd`**
+
+  - **Permission:** `essentials.motd`
+
+  - **What it does:** Shows the message of the day.
+
+- *`/msg`**
+
+  - **Permission:** `essentials.msg`
+
+  - **What it does:** Sends a private message to another player.
+
+- *`/msgtoggle`**
+
+  - **Permission:** `essentials.msgtoggle`
+
+  - **What it does:** Enables or disables receiving private messages.
+
+- *`/mute`**
+
+  - **Permission:** `essentials.mute`
+
+  - **What it does:** Mutes or unmutes a player.
+
+### N
+
+- *`/near`**
+
+  - **Permission:** `essentials.near`
+
+  - **What it does:** Lists nearby players.
+
+- *`/nick`**
+
+  - **Permission:** `essentials.nick`
+
+  - **What it does:** Changes a player's nickname.
+
+- *`/nuke`**
+
+  - **Permission:** `essentials.nuke`
+
+  - **What it does:** Drops dangerous entities or items around players.
+
+### P
+
+- *`/pay`**
+
+  - **Permission:** `essentials.pay`
+
+  - **What it does:** Sends money to another player.
+
+- *`/payconfirmtoggle`**
+
+  - **Permission:** `essentials.payconfirmtoggle`
+
+  - **What it does:** Toggles payment confirmation prompts.
+
+- *`/paytoggle`**
+
+  - **Permission:** `essentials.paytoggle`
+
+  - **What it does:** Toggles whether you accept payments.
+
+- *`/ping`**
+
+  - **Permission:** `essentials.ping`
+
+  - **What it does:** Checks whether the server is responding.
+
+- *`/playtime`**
+
+  - **Permission:** `essentials.playtime`
+
+  - **What it does:** Shows a player's total playtime.
+
+- *`/potion`**
+
+  - **Permission:** `essentials.potion`
+
+  - **What it does:** Adds effects to a potion.
+
+- *`/powertool`**
+
+  - **Permission:** `essentials.powertool`
+
+  - **What it does:** Assigns a command to the held item.
+
+- *`/powertoollist`**
+
+  - **Permission:** `essentials.powertoollist`
+
+  - **What it does:** Lists assigned power tools.
+
+- *`/powertooltoggle`**
+
+  - **Permission:** `essentials.powertooltoggle`
+
+  - **What it does:** Enables or disables your power tools.
+
+- *`/ptime`**
+
+  - **Permission:** `essentials.ptime`
+
+  - **What it does:** Changes a player's personal time.
+
+- *`/pweather`**
+
+  - **Permission:** `essentials.pweather`
+
+  - **What it does:** Changes a player's personal weather.
+
+### R
+
+- *`/r`**
+
+  - **Permission:** `essentials.msg`
+
+  - **What it does:** Replies to the most recent private message.
+
+- *`/realname`**
+
+  - **Permission:** `essentials.realname`
+
+  - **What it does:** Shows the username behind a nickname.
+
+- *`/recipe`**
+
+  - **Permission:** `essentials.recipe`
+
+  - **What it does:** Shows an item's crafting recipe.
+
+- *`/remove`**
+
+  - **Permission:** `essentials.remove`
+
+  - **What it does:** Removes selected entities from the world.
+
+- *`/renamehome`**
+
+  - **Permission:** `essentials.renamehome`
+
+  - **What it does:** Renames a home.
+
+- *`/repair`**
+
+  - **Permission:** `essentials.repair`
+
+  - **What it does:** Repairs held items or all equipped items.
+
+- *`/rest`**
+
+  - **Permission:** `essentials.rest`
+
+  - **What it does:** Resets a player's time since sleeping.
+
+- *`/rtoggle`**
+
+  - **Permission:** `essentials.rtoggle`
+
+  - **What it does:** Changes how the reply command selects its recipient.
+
+- *`/rules`**
+
+  - **Permission:** `essentials.rules`
+
+  - **What it does:** Shows the server rules.
+
+### S
+
+- *`/seen`**
+
+  - **Permission:** `essentials.seen`
+
+  - **What it does:** Shows when a player was last online.
+
+- *`/sell`**
+
+  - **Permission:** `essentials.sell`
+
+  - **What it does:** Sells the item in your hand.
+
+- *`/sethome`**
+
+  - **Permission:** `essentials.sethome`
+
+  - **What it does:** Creates a home at your current location.
+
+- *`/setjail`**
+
+  - **Permission:** `essentials.setjail`
+
+  - **What it does:** Creates a jail at your current location.
+
+- *`/setspawn`**
+
+  - **Permission:** `essentials.setspawn`
+
+  - **What it does:** Sets the server spawn.
+
+- *`/settpr`**
+
+  - **Permission:** `essentials.settpr`
+
+  - **What it does:** Configures the random-teleport location and settings.
+
+- *`/setwarp`**
+
+  - **Permission:** `essentials.setwarp`
+
+  - **What it does:** Creates a warp.
+
+- *`/setworth`**
+
+  - **Permission:** `essentials.setworth`
+
+  - **What it does:** Sets an item's selling value.
+
+- *`/setxmpp`**
+
+  - **Permission:** `essentials.setxmpp`
+
+  - **What it does:** Sets your XMPP address.
+
+- *`/showkit`**
+
+  - **Permission:** `essentials.showkit`
+
+  - **What it does:** Shows the contents of a kit.
+
+- *`/skull`**
+
+  - **Permission:** `essentials.skull`
+
+  - **What it does:** Changes or gives a player head.
+
+- *`/smithingtable`**
+
+  - **Permission:** `essentials.smithingtable`
+
+  - **What it does:** Opens a smithing table.
+
+- *`/socialspy`**
+
+  - **Permission:** `essentials.socialspy`
+
+  - **What it does:** Shows private messages and mail sent by other players.
+
+- *`/spawn`**
+
+  - **Permission:** `essentials.spawn`
+
+  - **What it does:** Teleports to the server spawn.
+
+- *`/spawner`**
+
+  - **Permission:** `essentials.spawner`
+
+  - **What it does:** Changes the mob type of a spawner.
+
+- *`/spawnmob`**
+
+  - **Permission:** `essentials.spawnmob`
+
+  - **What it does:** Spawns a mob.
+
+- *`/speed`**
+
+  - **Permission:** `essentials.speed`
+
+  - **What it does:** Changes walking or flying speed.
+
+- *`/stonecutter`**
+
+  - **Permission:** `essentials.stonecutter`
+
+  - **What it does:** Opens a stonecutter.
+
+- *`/sudo`**
+
+  - **Permission:** `essentials.sudo`
+
+  - **What it does:** Makes another player execute a command or chat message.
+
+- *`/suicide`**
+
+  - **Permission:** `essentials.suicide`
+
+  - **What it does:** Respawns your in-game character.
+
+### T
+
+- *`/tempban`**
+
+  - **Permission:** `essentials.tempban`
+
+  - **What it does:** Temporarily bans a player.
+
+- *`/tempbanip`**
+
+  - **Permission:** `essentials.tempbanip`
+
+  - **What it does:** Temporarily bans an IP address.
+
+- *`/thunder`**
+
+  - **Permission:** `essentials.thunder`
+
+  - **What it does:** Enables or disables thunderstorms.
+
+- *`/time`**
+
+  - **Permission:** `essentials.time`
+
+  - **What it does:** Shows or changes the world's time.
+
+- *`/togglejail`**
+
+  - **Permission:** `essentials.togglejail`
+
+  - **What it does:** Jails or releases a player.
+
+- *`/toggleshout`**
+
+  - **Permission:** `essentials.toggleshout`
+
+  - **What it does:** Toggles shout chat mode.
+
+- *`/top`**
+
+  - **Permission:** `essentials.top`
+
+  - **What it does:** Teleports to the highest safe block above you.
+
+- *`/tp`**
+
+  - **Permission:** `essentials.tp`
+
+  - **What it does:** Teleports to another player.
+
+- *`/tpa`**
+
+  - **Permission:** `essentials.tpa`
+
+  - **What it does:** Requests to teleport to another player.
+
+- *`/tpaall`**
+
+  - **Permission:** `essentials.tpaall`
+
+  - **What it does:** Requests that every online player teleport to you.
+
+- *`/tpacancel`**
+
+  - **Permission:** `essentials.tpacancel`
+
+  - **What it does:** Cancels outstanding teleport requests.
+
+- *`/tpaccept`**
+
+  - **Permission:** `essentials.tpaccept`
+
+  - **What it does:** Accepts an incoming teleport request.
+
+- *`/tpahere`**
+
+  - **Permission:** `essentials.tpahere`
+
+  - **What it does:** Requests that another player teleport to you.
+
+- *`/tpall`**
+
+  - **Permission:** `essentials.tpall`
+
+  - **What it does:** Teleports every online player to another player.
+
+- *`/tpauto`**
+
+  - **Permission:** `essentials.tpauto`
+
+  - **What it does:** Automatically accepts teleport requests.
+
+- *`/tpdeny`**
+
+  - **Permission:** `essentials.tpdeny`
+
+  - **What it does:** Rejects a teleport request.
+
+- *`/tphere`**
+
+  - **Permission:** `essentials.tphere`
+
+  - **What it does:** Teleports another player to you.
+
+- *`/tpo`**
+
+  - **Permission:** `essentials.tpo`
+
+  - **What it does:** Teleports while bypassing teleport restrictions.
+
+- *`/tpoffline`**
+
+  - **Permission:** `essentials.tpoffline`
+
+  - **What it does:** Teleports to an offline player's last location.
+
+- *`/tpohere`**
+
+  - **Permission:** `essentials.tpohere`
+
+  - **What it does:** Teleports another player to you while bypassing restrictions.
+
+- *`/tppos`**
+
+  - **Permission:** `essentials.tppos`
+
+  - **What it does:** Teleports to specific coordinates.
+
+- *`/tpr`**
+
+  - **Permission:** `essentials.tpr`
+
+  - **What it does:** Randomly teleports you.
+
+- *`/tptoggle`**
+
+  - **Permission:** `essentials.tptoggle`
+
+  - **What it does:** Blocks or allows incoming teleports.
+
+- *`/tree`**
+
+  - **Permission:** `essentials.tree`
+
+  - **What it does:** Spawns a tree where you are looking.
+
+### U
+
+- *`/unban`**
+
+  - **Permission:** `essentials.unban`
+
+  - **What it does:** Unbans a player.
+
+- *`/unbanip`**
+
+  - **Permission:** `essentials.unbanip`
+
+  - **What it does:** Unbans an IP address.
+
+- *`/unlimited`**
+
+  - **Permission:** `essentials.unlimited`
+
+  - **What it does:** Provides unlimited placement or use of selected items.
+
+- *`/unlink`**
+
+  - **Permission:** `essentials.unlink`
+
+  - **What it does:** Unlinks your Minecraft account from Discord.
+
+### V
+
+- *`/vanish`**
+
+  - **Permission:** `essentials.vanish`
+
+  - **What it does:** Hides you from other players.
+
+### W
+
+- *`/warp`**
+
+  - **Permission:** `essentials.warp`
+
+  - **What it does:** Lists warps or teleports to a warp.
+
+- *`/warpinfo`**
+
+  - **Permission:** `essentials.warpinfo`
+
+  - **What it does:** Shows information about a warp.
+
+- *`/weather`**
+
+  - **Permission:** `essentials.weather`
+
+  - **What it does:** Changes the world's weather.
+
+- *`/whois`**
+
+  - **Permission:** `essentials.whois`
+
+  - **What it does:** Shows information about a player.
+
+- *`/workbench`**
+
+  - **Permission:** `essentials.workbench`
+
+  - **What it does:** Opens a crafting table.
+
+- *`/world`**
+
+  - **Permission:** `essentials.world`
+
+  - **What it does:** Teleports between worlds.
+
+- *`/worth`**
+
+  - **Permission:** `essentials.worth`
+
+  - **What it does:** Shows the selling value of an item.
+
+### X
+
+- *`/xmpp`**
+
+  - **Permission:** `essentials.xmpp`
+
+  - **What it does:** Sends an XMPP message to a player.
+
+- *`/xmppspy`**
+
+  - **Permission:** `essentials.xmppspy`
+
+  - **What it does:** Toggles spying on XMPP messages.# EssentialsX
+
+EssentialsX is a plugin for Paper, Bukkit, and Spigot servers that provides essential server commands such as `/tpa`, `/sethome`, and more.
+
+## LowFrame Commands
+
+On LowFrame, EssentialsX provides the following commands:
+
+- *`/afk`** — Marks you as AFK or removes your AFK status.
+
+- *`/back`** — Teleports you to your previous location.
+
+- *`/discord`** — Shows the server's Discord link.
+
+- *`/enderchest`** — Opens your Ender Chest.
+
+- *`/home [name]`** — Teleports you to one of your homes.
+
+- *`/mail read`** — Shows your in-game mail.
+
+- *`/mail send <player> <message>`** — Sends mail to another player.
+
+- *`/motd`** — Shows the server's message of the day.
+
+- *`/ping`** — Checks whether the server is responding.
+
+- *`/rtp`** — Randomly teleports you to another location.
+
+- *`/sethome [name]`** — Creates a home at your current location.
+
+- *`/spawn`** — Teleports you to the server spawn.
+
+- *`/suicide`** — Respawns your in-game character.
+
+- *`/tpa <player>`** — Requests to teleport to another player.
+
+- *`/tpacancel`** — Cancels your current teleport request.
+
+- *`/tpaccept`** — Accepts an incoming teleport request.
+
+- *`/tpahere <player>`** — Requests that another player teleport to you.
+
+- *`/warp <name>`** — Teleports you to a server warp.
+
+- *`/warps`** — Shows the available server warps.
+
+- *`/warpinfo <name>`** — Shows information about a warp.
+
+## Server Setup
+
+For server owners, here is a guide on how to set it up.
+
+### Requirements
+
+1. LuckPerms
+
+2. Vault
+
+### Starting Up
+
+In game, run `/lp editor`.
+
+Open the default group in the editor, then add the permission required for each command.
+
+## EssentialsX Commands
+
+Each command below includes its main permission and a short description. Some commands have additional permissions for targeting other players, bypassing limits, accessing specific kits, or using individual warps.
+
+### A
+
+- *`/afk`**
+
+  - **Permission:** `essentials.afk`
+
+  - **What it does:** Marks you as away-from-keyboard.
+
+- *`/antioch`**
+
+  - **Permission:** `essentials.antioch`
+
+  - **What it does:** A little surprise for operators.
+
+- *`/anvil`**
+
+  - **Permission:** `essentials.anvil`
+
+  - **What it does:** Opens an anvil.
+
+### B
+
+- *`/back`**
+
+  - **Permission:** `essentials.back`
+
+  - **What it does:** Teleports you to your location before teleporting, spawning, or warping.
+
+- *`/backup`**
+
+  - **Permission:** `essentials.backup`
+
+  - **What it does:** Runs the server backup if configured.
+
+- *`/balance`**
+
+  - **Permission:** `essentials.balance`
+
+  - **What it does:** Shows a player's current balance.
+
+- *`/balancetop`**
+
+  - **Permission:** `essentials.balancetop`
+
+  - **What it does:** Shows the players with the highest balances.
+
+- *`/ban`**
+
+  - **Permission:** `essentials.ban`
+
+  - **What it does:** Bans a player.
+
+- *`/banip`**
+
+  - **Permission:** `essentials.banip`
+
+  - **What it does:** Bans an IP address.
+
+- *`/beezooka`**
+
+  - **Permission:** `essentials.beezooka`
+
+  - **What it does:** Throws an exploding bee.
+
+- *`/bigtree`**
+
+  - **Permission:** `essentials.bigtree`
+
+  - **What it does:** Spawns a large tree where you are looking.
+
+- *`/book`**
+
+  - **Permission:** `essentials.book`
+
+  - **What it does:** Allows reopening and editing signed books.
+
+- *`/bottom`**
+
+  - **Permission:** `essentials.bottom`
+
+  - **What it does:** Teleports to the lowest safe block at your current position.
+
+- *`/break`**
+
+  - **Permission:** `essentials.break`
+
+  - **What it does:** Breaks the block you are looking at.
+
+- *`/broadcast`**
+
+  - **Permission:** `essentials.broadcast`
+
+  - **What it does:** Broadcasts a message to the entire server.
+
+- *`/broadcastworld`**
+
+  - **Permission:** `essentials.broadcastworld`
+
+  - **What it does:** Broadcasts a message to a specific world.
+
+- *`/burn`**
+
+  - **Permission:** `essentials.burn`
+
+  - **What it does:** Sets a player on fire.
+
+### C
+
+- *`/cartographytable`**
+
+  - **Permission:** `essentials.cartographytable`
+
+  - **What it does:** Opens a cartography table.
+
+- *`/clearinventory`**
+
+  - **Permission:** `essentials.clearinventory`
+
+  - **What it does:** Clears a player's inventory.
+
+- *`/clearinventoryconfirmtoggle`**
+
+  - **Permission:** `essentials.clearinventoryconfirmtoggle`
+
+  - **What it does:** Toggles inventory-clear confirmation prompts.
+
+- *`/compass`**
+
+  - **Permission:** `essentials.compass`
+
+  - **What it does:** Shows your current direction.
+
+- *`/condense`**
+
+  - **Permission:** `essentials.condense`
+
+  - **What it does:** Converts items into more compact forms, such as ingots into blocks.
+
+- *`/createkit`**
+
+  - **Permission:** `essentials.createkit`
+
+  - **What it does:** Creates a kit in game.
+
+- *`/customtext`**
+
+  - **Permission:** `essentials.customtext`
+
+  - **What it does:** Allows access to configured custom-text commands.
+
+### D
+
+- *`/delhome`**
+
+  - **Permission:** `essentials.delhome`
+
+  - **What it does:** Deletes a home.
+
+- *`/deljail`**
+
+  - **Permission:** `essentials.deljail`
+
+  - **What it does:** Deletes a jail.
+
+- *`/delkit`**
+
+  - **Permission:** `essentials.delkit`
+
+  - **What it does:** Deletes a kit.
+
+- *`/delwarp`**
+
+  - **Permission:** `essentials.delwarp`
+
+  - **What it does:** Deletes a warp.
+
+- *`/depth`**
+
+  - **Permission:** `essentials.depth`
+
+  - **What it does:** Shows your depth relative to sea level.
+
+- *`/discord`**
+
+  - **Permission:** `essentials.discord`
+
+  - **What it does:** Shows the server's Discord invitation.
+
+- *`/discordbroadcast`**
+
+  - **Permission:** `essentials.discordbroadcast`
+
+  - **What it does:** Broadcasts a message to a Discord channel.
+
+- *`/disposal`**
+
+  - **Permission:** `essentials.disposal`
+
+  - **What it does:** Opens a portable disposal inventory.
+
+### E
+
+- *`/eco`**
+
+  - **Permission:** `essentials.eco`
+
+  - **What it does:** Manages player balances and the server economy.
+
+- *`/editsign`**
+
+  - **Permission:** `essentials.editsign`
+
+  - **What it does:** Edits a sign in the world.
+
+- *`/enchant`**
+
+  - **Permission:** `essentials.enchant`
+
+  - **What it does:** Enchants the item being held.
+
+- *`/enderchest`**
+
+  - **Permission:** `essentials.enderchest`
+
+  - **What it does:** Opens an Ender Chest.
+
+- *`/essentials`**
+
+  - **Permission:** `essentials.essentials`
+
+  - **What it does:** Shows EssentialsX information or reloads the plugin.
+
+- *`/exp`**
+
+  - **Permission:** `essentials.exp`
+
+  - **What it does:** Gives, sets, resets, or checks player experience.
+
+- *`/ext`**
+
+  - **Permission:** `essentials.ext`
+
+  - **What it does:** Extinguishes a player.
+
+### F
+
+- *`/feed`**
+
+  - **Permission:** `essentials.feed`
+
+  - **What it does:** Restores a player's hunger.
+
+- *`/fireball`**
+
+  - **Permission:** `essentials.fireball`
+
+  - **What it does:** Launches a fireball or another projectile.
+
+- *`/firework`**
+
+  - **Permission:** `essentials.firework`
+
+  - **What it does:** Creates or modifies fireworks.
+
+- *`/fly`**
+
+  - **Permission:** `essentials.fly`
+
+  - **What it does:** Enables or disables flight.
+
+### G
+
+- *`/gamemode`**
+
+  - **Permission:** `essentials.gamemode`
+
+  - **What it does:** Changes a player's game mode.
+
+- *`/gc`**
+
+  - **Permission:** `essentials.gc`
+
+  - **What it does:** Shows memory, uptime, TPS, and server information.
+
+- *`/getpos`**
+
+  - **Permission:** `essentials.getpos`
+
+  - **What it does:** Shows your coordinates or another player's coordinates.
+
+- *`/give`**
+
+  - **Permission:** `essentials.give`
+
+  - **What it does:** Gives an item to a player.
+
+- *`/god`**
+
+  - **Permission:** `essentials.god`
+
+  - **What it does:** Enables or disables god mode.
+
+- *`/grindstone`**
+
+  - **Permission:** `essentials.grindstone`
+
+  - **What it does:** Opens a grindstone.
+
+### H
+
+- *`/hat`**
+
+  - **Permission:** `essentials.hat`
+
+  - **What it does:** Places the item in your hand on your head.
+
+- *`/heal`**
+
+  - **Permission:** `essentials.heal`
+
+  - **What it does:** Restores a player's health.
+
+- *`/help`**
+
+  - **Permission:** `essentials.help`
+
+  - **What it does:** Shows available commands.
+
+- *`/helpop`**
+
+  - **Permission:** `essentials.helpop`
+
+  - **What it does:** Sends a message to online server staff.
+
+- *`/home`**
+
+  - **Permission:** `essentials.home`
+
+  - **What it does:** Teleports to a home.
+
+### I
+
+- *`/ice`**
+
+  - **Permission:** `essentials.ice`
+
+  - **What it does:** Freezes or cools a player.
+
+- *`/ignore`**
+
+  - **Permission:** `essentials.ignore`
+
+  - **What it does:** Ignores or stops ignoring another player.
+
+- *`/info`**
+
+  - **Permission:** `essentials.info`
+
+  - **What it does:** Shows server information configured by the owner.
+
+- *`/invsee`**
+
+  - **Permission:** `essentials.invsee`
+
+  - **What it does:** Opens another player's inventory.
+
+- *`/item`**
+
+  - **Permission:** `essentials.item`
+
+  - **What it does:** Gives yourself an item.
+
+- *`/itemdb`**
+
+  - **Permission:** `essentials.itemdb`
+
+  - **What it does:** Searches for an item name or ID.
+
+- *`/itemlore`**
+
+  - **Permission:** `essentials.itemlore`
+
+  - **What it does:** Edits an item's lore.
+
+- *`/itemname`**
+
+  - **Permission:** `essentials.itemname`
+
+  - **What it does:** Renames an item.
+
+### J
+
+- *`/jailedplayers`**
+
+  - **Permission:** `essentials.jailedplayers`
+
+  - **What it does:** Lists jailed players.
+
+- *`/jails`**
+
+  - **Permission:** `essentials.jails`
+
+  - **What it does:** Lists available jails.
+
+- *`/jump`**
+
+  - **Permission:** `essentials.jump`
+
+  - **What it does:** Teleports to the block you are looking at.
+
+### K
+
+- *`/kick`**
+
+  - **Permission:** `essentials.kick`
+
+  - **What it does:** Kicks a player from the server.
+
+- *`/kickall`**
+
+  - **Permission:** `essentials.kickall`
+
+  - **What it does:** Kicks every player except the command sender.
+
+- *`/kill`**
+
+  - **Permission:** `essentials.kill`
+
+  - **What it does:** Kills a selected player.
+
+- *`/kit`**
+
+  - **Permission:** `essentials.kit`
+
+  - **What it does:** Claims a kit or lists available kits.
+
+- *`/kitreset`**
+
+  - **Permission:** `essentials.kitreset`
+
+  - **What it does:** Resets a kit's cooldown.
+
+- *`/kittycannon`**
+
+  - **Permission:** `essentials.kittycannon`
+
+  - **What it does:** Launches an exploding kitten.
+
+### L
+
+- *`/lightning`**
+
+  - **Permission:** `essentials.lightning`
+
+  - **What it does:** Strikes lightning at a player or location.
+
+- *`/link`**
+
+  - **Permission:** `essentials.link`
+
+  - **What it does:** Generates a code to link Minecraft and Discord accounts.
+
+- *`/list`**
+
+  - **Permission:** `essentials.list`
+
+  - **What it does:** Lists online players.
+
+- *`/loom`**
+
+  - **Permission:** `essentials.loom`
+
+  - **What it does:** Opens a loom.
+
+### M
+
+- *`/mail`**
+
+  - **Permission:** `essentials.mail`
+
+  - **What it does:** Reads, sends, or clears in-game mail.
+
+- *`/me`**
+
+  - **Permission:** `essentials.me`
+
+  - **What it does:** Sends an action-style chat message.
+
+- *`/more`**
+
+  - **Permission:** `essentials.more`
+
+  - **What it does:** Fills the held item stack to its maximum amount.
+
+- *`/motd`**
+
+  - **Permission:** `essentials.motd`
+
+  - **What it does:** Shows the message of the day.
+
+- *`/msg`**
+
+  - **Permission:** `essentials.msg`
+
+  - **What it does:** Sends a private message to another player.
+
+- *`/msgtoggle`**
+
+  - **Permission:** `essentials.msgtoggle`
+
+  - **What it does:** Enables or disables receiving private messages.
+
+- *`/mute`**
+
+  - **Permission:** `essentials.mute`
+
+  - **What it does:** Mutes or unmutes a player.
+
+### N
+
+- *`/near`**
+
+  - **Permission:** `essentials.near`
+
+  - **What it does:** Lists nearby players.
+
+- *`/nick`**
+
+  - **Permission:** `essentials.nick`
+
+  - **What it does:** Changes a player's nickname.
+
+- *`/nuke`**
+
+  - **Permission:** `essentials.nuke`
+
+  - **What it does:** Drops dangerous entities or items around players.
+
+### P
+
+- *`/pay`**
+
+  - **Permission:** `essentials.pay`
+
+  - **What it does:** Sends money to another player.
+
+- *`/payconfirmtoggle`**
+
+  - **Permission:** `essentials.payconfirmtoggle`
+
+  - **What it does:** Toggles payment confirmation prompts.
+
+- *`/paytoggle`**
+
+  - **Permission:** `essentials.paytoggle`
+
+  - **What it does:** Toggles whether you accept payments.
+
+- *`/ping`**
+
+  - **Permission:** `essentials.ping`
+
+  - **What it does:** Checks whether the server is responding.
+
+- *`/playtime`**
+
+  - **Permission:** `essentials.playtime`
+
+  - **What it does:** Shows a player's total playtime.
+
+- *`/potion`**
+
+  - **Permission:** `essentials.potion`
+
+  - **What it does:** Adds effects to a potion.
+
+- *`/powertool`**
+
+  - **Permission:** `essentials.powertool`
+
+  - **What it does:** Assigns a command to the held item.
+
+- *`/powertoollist`**
+
+  - **Permission:** `essentials.powertoollist`
+
+  - **What it does:** Lists assigned power tools.
+
+- *`/powertooltoggle`**
+
+  - **Permission:** `essentials.powertooltoggle`
+
+  - **What it does:** Enables or disables your power tools.
+
+- *`/ptime`**
+
+  - **Permission:** `essentials.ptime`
+
+  - **What it does:** Changes a player's personal time.
+
+- *`/pweather`**
+
+  - **Permission:** `essentials.pweather`
+
+  - **What it does:** Changes a player's personal weather.
+
+### R
+
+- *`/r`**
+
+  - **Permission:** `essentials.msg`
+
+  - **What it does:** Replies to the most recent private message.
+
+- *`/realname`**
+
+  - **Permission:** `essentials.realname`
+
+  - **What it does:** Shows the username behind a nickname.
+
+- *`/recipe`**
+
+  - **Permission:** `essentials.recipe`
+
+  - **What it does:** Shows an item's crafting recipe.
+
+- *`/remove`**
+
+  - **Permission:** `essentials.remove`
+
+  - **What it does:** Removes selected entities from the world.
+
+- *`/renamehome`**
+
+  - **Permission:** `essentials.renamehome`
+
+  - **What it does:** Renames a home.
+
+- *`/repair`**
+
+  - **Permission:** `essentials.repair`
+
+  - **What it does:** Repairs held items or all equipped items.
+
+- *`/rest`**
+
+  - **Permission:** `essentials.rest`
+
+  - **What it does:** Resets a player's time since sleeping.
+
+- *`/rtoggle`**
+
+  - **Permission:** `essentials.rtoggle`
+
+  - **What it does:** Changes how the reply command selects its recipient.
+
+- *`/rules`**
+
+  - **Permission:** `essentials.rules`
+
+  - **What it does:** Shows the server rules.
+
+### S
+
+- *`/seen`**
+
+  - **Permission:** `essentials.seen`
+
+  - **What it does:** Shows when a player was last online.
+
+- *`/sell`**
+
+  - **Permission:** `essentials.sell`
+
+  - **What it does:** Sells the item in your hand.
+
+- *`/sethome`**
+
+  - **Permission:** `essentials.sethome`
+
+  - **What it does:** Creates a home at your current location.
+
+- *`/setjail`**
+
+  - **Permission:** `essentials.setjail`
+
+  - **What it does:** Creates a jail at your current location.
+
+- *`/setspawn`**
+
+  - **Permission:** `essentials.setspawn`
+
+  - **What it does:** Sets the server spawn.
+
+- *`/settpr`**
+
+  - **Permission:** `essentials.settpr`
+
+  - **What it does:** Configures the random-teleport location and settings.
+
+- *`/setwarp`**
+
+  - **Permission:** `essentials.setwarp`
+
+  - **What it does:** Creates a warp.
+
+- *`/setworth`**
+
+  - **Permission:** `essentials.setworth`
+
+  - **What it does:** Sets an item's selling value.
+
+- *`/setxmpp`**
+
+  - **Permission:** `essentials.setxmpp`
+
+  - **What it does:** Sets your XMPP address.
+
+- *`/showkit`**
+
+  - **Permission:** `essentials.showkit`
+
+  - **What it does:** Shows the contents of a kit.
+
+- *`/skull`**
+
+  - **Permission:** `essentials.skull`
+
+  - **What it does:** Changes or gives a player head.
+
+- *`/smithingtable`**
+
+  - **Permission:** `essentials.smithingtable`
+
+  - **What it does:** Opens a smithing table.
+
+- *`/socialspy`**
+
+  - **Permission:** `essentials.socialspy`
+
+  - **What it does:** Shows private messages and mail sent by other players.
+
+- *`/spawn`**
+
+  - **Permission:** `essentials.spawn`
+
+  - **What it does:** Teleports to the server spawn.
+
+- *`/spawner`**
+
+  - **Permission:** `essentials.spawner`
+
+  - **What it does:** Changes the mob type of a spawner.
+
+- *`/spawnmob`**
+
+  - **Permission:** `essentials.spawnmob`
+
+  - **What it does:** Spawns a mob.
+
+- *`/speed`**
+
+  - **Permission:** `essentials.speed`
+
+  - **What it does:** Changes walking or flying speed.
+
+- *`/stonecutter`**
+
+  - **Permission:** `essentials.stonecutter`
+
+  - **What it does:** Opens a stonecutter.
+
+- *`/sudo`**
+
+  - **Permission:** `essentials.sudo`
+
+  - **What it does:** Makes another player execute a command or chat message.
+
+- *`/suicide`**
+
+  - **Permission:** `essentials.suicide`
+
+  - **What it does:** Respawns your in-game character.
+
+### T
+
+- *`/tempban`**
+
+  - **Permission:** `essentials.tempban`
+
+  - **What it does:** Temporarily bans a player.
+
+- *`/tempbanip`**
+
+  - **Permission:** `essentials.tempbanip`
+
+  - **What it does:** Temporarily bans an IP address.
+
+- *`/thunder`**
+
+  - **Permission:** `essentials.thunder`
+
+  - **What it does:** Enables or disables thunderstorms.
+
+- *`/time`**
+
+  - **Permission:** `essentials.time`
+
+  - **What it does:** Shows or changes the world's time.
+
+- *`/togglejail`**
+
+  - **Permission:** `essentials.togglejail`
+
+  - **What it does:** Jails or releases a player.
+
+- *`/toggleshout`**
+
+  - **Permission:** `essentials.toggleshout`
+
+  - **What it does:** Toggles shout chat mode.
+
+- *`/top`**
+
+  - **Permission:** `essentials.top`
+
+  - **What it does:** Teleports to the highest safe block above you.
+
+- *`/tp`**
+
+  - **Permission:** `essentials.tp`
+
+  - **What it does:** Teleports to another player.
+
+- *`/tpa`**
+
+  - **Permission:** `essentials.tpa`
+
+  - **What it does:** Requests to teleport to another player.
+
+- *`/tpaall`**
+
+  - **Permission:** `essentials.tpaall`
+
+  - **What it does:** Requests that every online player teleport to you.
+
+- *`/tpacancel`**
+
+  - **Permission:** `essentials.tpacancel`
+
+  - **What it does:** Cancels outstanding teleport requests.
+
+- *`/tpaccept`**
+
+  - **Permission:** `essentials.tpaccept`
+
+  - **What it does:** Accepts an incoming teleport request.
+
+- *`/tpahere`**
+
+  - **Permission:** `essentials.tpahere`
+
+  - **What it does:** Requests that another player teleport to you.
+
+- *`/tpall`**
+
+  - **Permission:** `essentials.tpall`
+
+  - **What it does:** Teleports every online player to another player.
+
+- *`/tpauto`**
+
+  - **Permission:** `essentials.tpauto`
+
+  - **What it does:** Automatically accepts teleport requests.
+
+- *`/tpdeny`**
+
+  - **Permission:** `essentials.tpdeny`
+
+  - **What it does:** Rejects a teleport request.
+
+- *`/tphere`**
+
+  - **Permission:** `essentials.tphere`
+
+  - **What it does:** Teleports another player to you.
+
+- *`/tpo`**
+
+  - **Permission:** `essentials.tpo`
+
+  - **What it does:** Teleports while bypassing teleport restrictions.
+
+- *`/tpoffline`**
+
+  - **Permission:** `essentials.tpoffline`
+
+  - **What it does:** Teleports to an offline player's last location.
+
+- *`/tpohere`**
+
+  - **Permission:** `essentials.tpohere`
+
+  - **What it does:** Teleports another player to you while bypassing restrictions.
+
+- *`/tppos`**
+
+  - **Permission:** `essentials.tppos`
+
+  - **What it does:** Teleports to specific coordinates.
+
+- *`/tpr`**
+
+  - **Permission:** `essentials.tpr`
+
+  - **What it does:** Randomly teleports you.
+
+- *`/tptoggle`**
+
+  - **Permission:** `essentials.tptoggle`
+
+  - **What it does:** Blocks or allows incoming teleports.
+
+- *`/tree`**
+
+  - **Permission:** `essentials.tree`
+
+  - **What it does:** Spawns a tree where you are looking.
+
+### U
+
+- *`/unban`**
+
+  - **Permission:** `essentials.unban`
+
+  - **What it does:** Unbans a player.
+
+- *`/unbanip`**
+
+  - **Permission:** `essentials.unbanip`
+
+  - **What it does:** Unbans an IP address.
+
+- *`/unlimited`**
+
+  - **Permission:** `essentials.unlimited`
+
+  - **What it does:** Provides unlimited placement or use of selected items.
+
+- *`/unlink`**
+
+  - **Permission:** `essentials.unlink`
+
+  - **What it does:** Unlinks your Minecraft account from Discord.
+
+### V
+
+- *`/vanish`**
+
+  - **Permission:** `essentials.vanish`
+
+  - **What it does:** Hides you from other players.
+
+### W
+
+- *`/warp`**
+
+  - **Permission:** `essentials.warp`
+
+  - **What it does:** Lists warps or teleports to a warp.
+
+- *`/warpinfo`**
+
+  - **Permission:** `essentials.warpinfo`
+
+  - **What it does:** Shows information about a warp.
+
+- *`/weather`**
+
+  - **Permission:** `essentials.weather`
+
+  - **What it does:** Changes the world's weather.
+
+- *`/whois`**
+
+  - **Permission:** `essentials.whois`
+
+  - **What it does:** Shows information about a player.
+
+- *`/workbench`**
+
+  - **Permission:** `essentials.workbench`
+
+  - **What it does:** Opens a crafting table.
+
+- *`/world`**
+
+  - **Permission:** `essentials.world`
+
+  - **What it does:** Teleports between worlds.
+
+- *`/worth`**
+
+  - **Permission:** `essentials.worth`
+
+  - **What it does:** Shows the selling value of an item.
+
+### X
+
+- *`/xmpp`**
+
+  - **Permission:** `essentials.xmpp`
+
+  - **What it does:** Sends an XMPP message to a player.
+
+- *`/xmppspy`**
+
+  - **Permission:** `essentials.xmppspy`
+
+  - **What it does:** Toggles spying on XMPP messages.
