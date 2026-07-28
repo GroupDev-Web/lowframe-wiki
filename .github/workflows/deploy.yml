@@ -30,35 +30,39 @@ jobs:
         with:
           node-version: 24
 
-      - name: Cache npm
-        uses: actions/cache@v5
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
       - name: Install dependencies
         run: npm install
 
-      - name: Install Quartz plugins from config
-        run: npx quartz plugin install --from-config
+      - name: Clean generated plugins
+        run: rm -rf .quartz
+
+      - name: Install Quartz plugins
+        run: npx quartz plugin install --from-config --clean
+
+      - name: Verify Quartz plugins
+        run: |
+          echo "Generated Quartz plugin files:"
+          ls -la .quartz/plugins
+          test -f .quartz/plugins/index.ts || test -f .quartz/plugins/index.js
 
       - name: Build Quartz
         run: npx quartz build
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Upload website
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
   deploy:
     needs: build
+    runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
 
     steps:
       - name: Deploy to GitHub Pages
