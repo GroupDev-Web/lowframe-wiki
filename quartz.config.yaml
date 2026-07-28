@@ -1,31 +1,24 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
-
 configuration:
   pageTitle: LowFrame Wiki
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
-
   analytics:
     provider: plausible
-
   locale: en-US
   baseUrl: info.mc-lowframe.org
-
   ignorePatterns:
     - private
     - templates
     - .obsidian
-
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
-
     typography:
       header: Schibsted Grotesk
       body: Source Sans Pro
       code: IBM Plex Mono
-
     colors:
       lightMode:
         light: "#faf8f8"
@@ -35,9 +28,8 @@ configuration:
         dark: "#2b2b2b"
         secondary: "#284b63"
         tertiary: "#84a59d"
-        highlight: "rgba(143, 159, 169, 0.15)"
+        highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
-
       darkMode:
         light: "#161618"
         lightgray: "#393639"
@@ -46,7 +38,7 @@ configuration:
         dark: "#ebebec"
         secondary: "#7b97aa"
         tertiary: "#84a59d"
-        highlight: "rgba(143, 159, 169, 0.15)"
+        highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#b3aa0288"
 
 plugins:
@@ -164,8 +156,13 @@ plugins:
   - source: "@quartz-community/tag-page"
     enabled: true
 
-  - source: "@quartz-community/explorer"
+  - source: github:quartz-community/explorer
     enabled: true
+    options:
+      title: Explorer
+      folderClickBehavior: collapse
+      folderDefaultState: collapsed
+      useSavedState: true
     layout:
       position: left
       priority: 50
