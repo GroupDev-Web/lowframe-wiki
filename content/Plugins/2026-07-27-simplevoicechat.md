@@ -15,11 +15,8 @@ Players without the client mod can still join LowFrame, but they cannot speak or
 The client mod is available for:
 
 - Fabric
-
 - NeoForge
-
 - Forge
-
 - Quilt
 
 Install the version that matches your Minecraft version and mod loader.
@@ -27,15 +24,10 @@ Install the version that matches your Minecraft version and mod loader.
 ## Installing Simple Voice Chat
 
 1. Download Simple Voice Chat from its official download page.
-
 2. Select the version matching your Minecraft version.
-
 3. Select your mod loader.
-
 4. Place the downloaded `.jar` file inside your Minecraft `mods` folder.
-
 5. Restart Minecraft.
-
 6. Join LowFrame normally.
 
 Do not place the client mod inside a resource-pack or shader-pack folder.
@@ -51,13 +43,9 @@ Press `V` to open the voice chat setup guide.
 The guide will help you:
 
 1. Select your microphone.
-
 2. Select your speakers or headphones.
-
 3. Choose push-to-talk or voice activation.
-
 4. Set your push-to-talk key.
-
 5. Test your microphone volume.
 
 Headphones are recommended because speakers may create echoes.
@@ -75,17 +63,11 @@ Press `V` to open the voice chat menu.
 The menu allows you to:
 
 - Change your microphone.
-
 - Change your speaker or headphones.
-
 - Adjust player volumes.
-
 - Test your microphone.
-
 - Change your activation type.
-
 - Open group-chat settings.
-
 - Change voice-chat settings.
 
 ### Mute Microphone
@@ -101,7 +83,6 @@ Press `N` to disable or re-enable voice chat.
 When voice chat is disabled:
 
 - Other players cannot hear you.
-
 - You cannot hear other players.
 
 ### Hide Voice Chat Icons
@@ -157,21 +138,15 @@ Groups allow players to communicate without staying close together.
 Open the voice chat menu and select the group section to:
 
 - Create a group.
-
 - Join a group.
-
 - Invite players.
-
 - Leave your current group.
-
 - Protect a group with a password.
 
 Groups may be:
 
 - Open
-
 - Password-protected
-
 - Invite-only
 
 ## Commands
@@ -259,17 +234,11 @@ Players who want to use voice chat must also install the client mod. Players wit
 ## Paper, Spigot, and Bukkit Installation
 
 1. Stop the Minecraft server.
-
 2. Download the Simple Voice Chat Bukkit, Spigot, or Paper plugin.
-
 3. Make sure the plugin version supports your Minecraft version.
-
 4. Upload the plugin `.jar` file to the server's `plugins` folder.
-
 5. Start the server.
-
 6. Wait for Simple Voice Chat to generate its files.
-
 7. Stop the server before editing the configuration.
 
 The plugin file should be located in:
@@ -285,15 +254,10 @@ Players must use the Fabric, NeoForge, Forge, or Quilt client mod. They do not i
 ## Fabric, NeoForge, Forge, or Quilt Server Installation
 
 1. Stop the server.
-
 2. Download the Simple Voice Chat version matching the server's mod loader.
-
 3. Upload the `.jar` file to the server's `mods` folder.
-
 4. Start the server once.
-
 5. Wait for the configuration files to generate.
-
 6. Stop the server before editing the configuration.
 
 The server configuration is located at:
@@ -315,13 +279,9 @@ A normal Minecraft connection uses TCP, but Simple Voice Chat sends its audio ov
 Do not use a UDP port that is already being used by:
 
 - Geyser
-
 - The Minecraft query service
-
 - Another voice-chat server
-
 - Another game server
-
 - Another proxy
 
 ## Hosting Provider Setup
@@ -329,19 +289,12 @@ Do not use a UDP port that is already being used by:
 When using a Minecraft hosting provider:
 
 1. Open the server control panel.
-
 2. Find the network, allocations, ports, or additional-ports section.
-
 3. Add or request an extra UDP port.
-
 4. Copy the assigned port number.
-
 5. Open the Simple Voice Chat server configuration.
-
 6. Set `port` to the assigned UDP port.
-
 7. Save the file.
-
 8. Restart the server.
 
 Example:
@@ -357,7 +310,6 @@ Some server hosts require support staff to assign an additional UDP port.
 When hosting the server yourself, open the voice-chat UDP port in:
 
 - The computer's firewall.
-
 - The router's port-forwarding settings.
 
 The default port is:
@@ -497,11 +449,8 @@ Stop the server before changing Simple Voice Chat configuration files.
 After making changes:
 
 1. Save the configuration.
-
 2. Start the server again.
-
 3. Join using a client with Simple Voice Chat installed.
-
 4. Test the connection.
 
 Editing the configuration while the server is running may cause changes to reset.
@@ -533,21 +482,15 @@ Use this section when players connect through a Velocity proxy.
 Simple Voice Chat must be installed on:
 
 - The Velocity proxy.
-
 - Every backend Minecraft server that should support voice chat.
 
 ### Install on Velocity
 
 1. Stop the Velocity proxy.
-
 2. Download the Simple Voice Chat Velocity proxy plugin.
-
 3. Upload the plugin `.jar` file to the proxy's `plugins` folder.
-
 4. Start the proxy once.
-
 5. Wait for the configuration to generate.
-
 6. Stop the proxy before editing the configuration.
 
 The proxy configuration is located at:
@@ -575,9 +518,7 @@ When the proxy and backend servers run on the same machine, every backend voice-
 Example:
 
 - Lobby: `24454`
-
 - SMP1: `24455`
-
 - SMP2: `24456`
 
 Set the correct port inside each backend server's:
@@ -683,17 +624,11 @@ A disconnected plug normally means the client cannot reach the voice-chat UDP po
 Check that:
 
 - The port is open as UDP.
-
 - The configured port matches the allocated port.
-
 - The server was restarted after changing the configuration.
-
 - The player has the correct mod version.
-
 - The firewall allows the UDP port.
-
 - The router forwards the UDP port when self-hosting.
-
 - No other program is using the port.
 
 ### Failed to Bind to Address
@@ -719,7 +654,6 @@ They must use different UDP ports.
 Example:
 
 - Geyser: `19132 UDP`
-
 - Simple Voice Chat: `24454 UDP`
 
 ### Configuration Changes Keep Resetting
@@ -743,13 +677,9 @@ Restart the server afterward.
 Check that:
 
 - Simple Voice Chat is installed on every backend server.
-
 - Every backend has a unique voice-chat port.
-
 - The Velocity plugin is installed.
-
 - The backend server was restarted.
-
 - The proxy can reach the backend's voice-chat port.
 
 ## Player Troubleshooting
@@ -757,31 +687,20 @@ Check that:
 ### Nobody Can Hear You
 
 1. Press `V`.
-
 2. Open the voice-chat settings.
-
 3. Select the correct microphone.
-
 4. Make sure your microphone is not muted.
-
 5. Check your push-to-talk key.
-
 6. Use the microphone test.
-
 7. Check that Minecraft has microphone permission.
 
 ### You Cannot Hear Other Players
 
 1. Press `V`.
-
 2. Open the voice-chat settings.
-
 3. Select the correct speaker or headphones.
-
 4. Make sure voice chat is enabled.
-
 5. Increase the master voice-chat volume.
-
 6. Increase the volume for the affected player.
 
 ### Voice Chat Keeps Disconnecting
@@ -791,13 +710,9 @@ This can be caused by an unstable internet connection or blocked UDP traffic.
 Try:
 
 1. Leaving and rejoining LowFrame.
-
 2. Restarting Minecraft.
-
 3. Restarting your router.
-
 4. Checking that the correct mod version is installed.
-
 5. Contacting LowFrame staff if the problem continues.
 
 ## Voice Chat Rules
@@ -807,17 +722,11 @@ The normal LowFrame rules also apply to voice chat.
 Do not:
 
 - Harass or threaten other players.
-
 - Use slurs or hateful language.
-
 - Play extremely loud or disruptive sounds.
-
 - Spam your microphone.
-
 - Share private information such as your address, school, phone number, or passwords.
-
 - Record another player without permission.
-
 - Attempt to bypass a voice-chat mute or punishment.
 
 Mute players who make you uncomfortable and report serious problems to LowFrame staff.
