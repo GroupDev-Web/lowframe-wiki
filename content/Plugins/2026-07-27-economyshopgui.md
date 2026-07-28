@@ -45,13 +45,9 @@ The available section names depend on the server's configuration.
 ## Buying Items
 
 1. Run `/shop`.
-
 2. Open a category.
-
 3. Select an item.
-
 4. Choose the amount you want to purchase.
-
 5. Confirm the purchase.
 
 The money is taken from your economy balance.
@@ -59,13 +55,9 @@ The money is taken from your economy balance.
 You cannot buy an item when:
 
 - You do not have enough money.
-
 - The item has buying disabled.
-
 - You do not have access to its shop section.
-
 - Your inventory is full.
-
 - The item is temporarily unavailable.
 
 ## Selling Items
@@ -73,13 +65,9 @@ You cannot buy an item when:
 Items can be sold from the normal shop menu when they have a sell price.
 
 1. Run `/shop`.
-
 2. Open the category containing the item.
-
 3. Select the item.
-
 4. Choose the amount you want to sell.
-
 5. Confirm the sale.
 
 The items are removed from your inventory and money is added to your balance.
@@ -171,11 +159,8 @@ Items with selling disabled cannot be sold through the shop, `/sellgui`, or `/se
 The item may:
 
 - Have no sell price.
-
 - Contain unsupported custom data.
-
 - Be different from the item configured in the shop.
-
 - Belong to a section you cannot access.
 
 # Installation for Server Owners
@@ -185,11 +170,8 @@ EconomyShopGUI is installed as a server plugin.
 It supports Bukkit-based servers such as:
 
 - Paper
-
 - Purpur
-
 - Spigot
-
 - Bukkit
 
 Paper or Purpur is recommended for modern servers.
@@ -201,43 +183,28 @@ EconomyShopGUI requires a supported economy provider.
 Common setups include:
 
 - Vault with an economy plugin
-
 - ExcellentEconomy
-
 - EssentialsX Economy through Vault
-
 - PlayerPoints
-
 - GemsEconomy
-
 - UltraEconomy
-
 - VotingPlugin
 
 For a normal Vault setup, install:
 
 - EconomyShopGUI
-
 - Vault
-
 - An economy plugin such as ExcellentEconomy or EssentialsX Economy
 
 ## Installing EconomyShopGUI
 
 1. Stop the Minecraft server.
-
 2. Download the EconomyShopGUI version matching your Minecraft version.
-
 3. Upload the EconomyShopGUI `.jar` file to the server's `plugins` folder.
-
 4. Install a supported economy provider.
-
 5. Start the server.
-
 6. Wait for the plugin to generate its files.
-
 7. Check the console for errors.
-
 8. Stop the server before making large configuration changes.
 
 The plugin folder is normally located at:
@@ -275,27 +242,16 @@ Controls the plugin's main settings.
 This can include:
 
 - Economy provider
-
 - Currency formatting
-
 - Transaction settings
-
 - Sound settings
-
 - Shop behavior
-
 - Purchase menus
-
 - Sell menus
-
 - Discounts
-
 - Sell multipliers
-
 - Logging
-
 - Integrations
-
 - Default item formatting
 
 ### `sections.yml`
@@ -305,19 +261,12 @@ Controls the categories displayed in the main `/shop` menu.
 A section can define:
 
 - Section name
-
 - Display name
-
 - Material
-
 - Menu slot
-
 - Lore
-
 - Shop file
-
 - Permission requirements
-
 - Navigation settings
 
 ### `shops.yml`
@@ -329,27 +278,16 @@ Depending on the plugin version or configuration layout, individual shops may al
 Shop entries can contain:
 
 - Material
-
 - Buy price
-
 - Sell price
-
 - Display name
-
 - Lore
-
 - Enchantments
-
 - Item flags
-
 - Potion data
-
 - Spawner data
-
 - Commands
-
 - Custom model data
-
 - Page and slot positions
 
 ### Language Files
@@ -359,17 +297,11 @@ Language files control the messages shown to players.
 They can be used to customize:
 
 - Purchase messages
-
 - Sale messages
-
 - Error messages
-
 - Menu item names
-
 - Price text
-
 - Confirmation text
-
 - Reload messages
 
 ## Main Administrative Commands
@@ -419,17 +351,11 @@ Example:
 This is useful for items containing:
 
 - Custom names
-
 - Lore
-
 - Enchantments
-
 - Item flags
-
 - Potion data
-
 - Custom model data
-
 - Armor trims
 
 Required permission:
@@ -543,11 +469,8 @@ Back up your shop configuration before deleting a section.
 Every normal shop item can have:
 
 - A buy price
-
 - A sell price
-
 - Both prices
-
 - Only one enabled price
 
 Example:
@@ -597,27 +520,18 @@ An item with both prices disabled may be useful as a decoration or navigation it
 Before publishing the shop:
 
 1. Compare the buy and sell price of every item.
-
 2. Check crafting recipes.
-
 3. Check whether items can be converted into other items.
-
 4. Check villager trades.
-
 5. Check furnace and stonecutter recipes.
-
 6. Check compact and uncompact recipes.
-
 7. Test farms that can produce items automatically.
-
 8. Test whether players can create an infinite-money loop.
 
 For example, check whether a player can:
 
 1. Buy an item cheaply.
-
 2. Craft it into another item.
-
 3. Sell the result for more money.
 
 Back up the shop before making large price changes.
@@ -927,9 +841,7 @@ ShopStand permissions include:
 For a Vault-based setup, install:
 
 - Vault
-
 - ExcellentEconomy
-
 - EconomyShopGUI
 
 Confirm that ExcellentEconomy is the active Vault provider.
@@ -949,15 +861,10 @@ EconomyShopGUI supports PlaceholderAPI integration for displaying shop informati
 Possible uses include:
 
 - Scoreboards
-
 - Menus
-
 - Holograms
-
 - Chat formats
-
 - Item lore
-
 - Server information pages
 
 The exact placeholders depend on the feature and installed EconomyShopGUI version.
@@ -969,15 +876,10 @@ EconomyShopGUI can record player purchases and sales.
 Transaction logs can help server owners:
 
 - Detect economy exploits.
-
 - Review suspicious purchases.
-
 - Find incorrect prices.
-
 - Track how much money enters or leaves the economy.
-
 - Compare popular shop items.
-
 - Investigate reports from players.
 
 Recent versions can export transaction data using EconomyShopGUI's administrative logging commands.
@@ -989,17 +891,11 @@ YAML requires exact indentation.
 When editing configuration files:
 
 - Use spaces instead of tabs.
-
 - Keep indentation consistent.
-
 - Put text containing special characters inside quotes.
-
 - Do not create duplicate keys.
-
 - Do not remove required colons.
-
 - Back up the file before editing.
-
 - Stop the server before making large changes.
 
 After editing, run:
@@ -1015,15 +911,10 @@ If the configuration fails to load, inspect the server console for the filename 
 Check that:
 
 - A supported economy provider is installed.
-
 - Vault is installed when required.
-
 - The plugin version supports your Minecraft version.
-
 - The server uses Paper, Purpur, Spigot, or Bukkit.
-
 - The `.jar` file is inside the `plugins` folder.
-
 - The server console does not report a missing dependency.
 
 ### The Shop Opens but Categories Do Not
@@ -1031,15 +922,10 @@ Check that:
 Check:
 
 - The section exists in `sections.yml`.
-
 - The linked shop exists.
-
 - The player has permission for the section.
-
 - The section's material is valid.
-
 - The section uses a valid menu slot.
-
 - `/sreload` completed without errors.
 
 ### An Item Appears as a Barrier
@@ -1049,17 +935,11 @@ A barrier usually means EconomyShopGUI could not load the configured item.
 Check:
 
 - The material name.
-
 - The Minecraft version.
-
 - Custom item data.
-
 - Spawner integration.
-
 - Enchantment names.
-
 - Potion configuration.
-
 - YAML indentation.
 
 The console normally provides more information.
@@ -1069,13 +949,9 @@ The console normally provides more information.
 Check that:
 
 - Vault is installed when using a Vault economy.
-
 - An economy plugin is installed.
-
 - The economy plugin loaded successfully.
-
 - The selected provider is supported.
-
 - The server was restarted after installing dependencies.
 
 ### Prices Do Not Change
@@ -1087,13 +963,9 @@ Run:
 If the old price remains:
 
 1. Confirm that you edited the correct shop file.
-
 2. Check for YAML errors.
-
 3. Confirm that the item is not defined twice.
-
 4. Restart the server.
-
 5. Clear any proxy or plugin menu cache if applicable.
 
 ### Players Can Open Some Shops but Not Others
@@ -1119,23 +991,14 @@ Also give access to the required sections:
 Review:
 
 - Buy prices
-
 - Sell prices
-
 - Crafting recipes
-
 - Smelting recipes
-
 - Stonecutter recipes
-
 - Villager trades
-
 - Compacting recipes
-
 - Uncrafting recipes
-
 - Custom recipes
-
 - Automatic farms
 
 Immediately disable the affected item's sell price until the pricing loop is fixed.
@@ -1151,27 +1014,16 @@ Avoid the server-wide `/reload` command.
 ## Updating EconomyShopGUI
 
 1. Stop the server.
-
 2. Back up `plugins/EconomyShopGUI`.
-
 3. Back up the economy database.
-
 4. Download the latest compatible plugin version.
-
 5. Replace the old EconomyShopGUI `.jar`.
-
 6. Keep the configuration backup.
-
 7. Start the server.
-
 8. Review the console for migration warnings.
-
 9. Test `/shop`.
-
 10. Test buying and selling.
-
 11. Confirm that permissions still work.
-
 12. Confirm that the economy provider still connects.
 
 Do not delete your backup until the updated version is working correctly.
