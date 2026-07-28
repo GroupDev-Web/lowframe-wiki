@@ -12,15 +12,6 @@ content:
     path: content
     format: yaml-frontmatter
     subfolders: true
-    filename:
-      template: "{primary}.md"
-      field: create
-
-    view:
-      layout: tree
-      fields:
-        - title
-      primary: title
 
     fields:
       - name: title
@@ -45,3 +36,6 @@ content:
         label: Page Content
         type: rich-text
         required: true
+        options:
+          switcher: true
+          media: true
